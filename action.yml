@@ -1,0 +1,18 @@
+# https://help.github.com/en/articles/metadata-syntax-for-github-actions
+name: 'Mage Action'
+description: 'GitHub Action for Mage, a Make/rake-like build tool using Go'
+author: 'crazy-max'
+branding:
+  color: 'purple'
+  icon: 'settings'
+
+inputs:
+  version:
+    description: 'Mage version. Example: 1.9.0'
+    default: 'latest'
+  args:
+    description: 'Arguments to pass to Mage'
+
+runs:
+  using: 'node12'
+  main: 'lib/main.js'
