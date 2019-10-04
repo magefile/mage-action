@@ -64,29 +64,3 @@ jobs:
           git push origin :refs/tags/${{ steps.prepare.outputs.major_tag }}
           git tag -fa ${{ steps.prepare.outputs.major_tag }} -m "Release ${{ steps.prepare.outputs.tag_name }}"
           git push origin ${{ steps.prepare.outputs.major_tag }}
-
-  ci:
-    runs-on: ${{ matrix.os }}
-    strategy:
-      fail-fast: false
-      matrix:
-        os:
-          - ubuntu-latest
-          - macOS-latest
-          - windows-latest
-        version:
-          - latest
-          - 1.8.0
-    steps:
-      -
-        name: Checkout
-        uses: actions/checkout@v1
-      -
-        name: Set up Go
-        uses: actions/setup-go@master
-      -
-        name: Mage
-        uses: crazy-max/ghaction-mage@releases/v1
-        with:
-          version: ${{ matrix.version }}
-          args: -version
