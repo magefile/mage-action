@@ -1,5 +1,6 @@
 [![GitHub release](https://img.shields.io/github/release/crazy-max/ghaction-mage.svg?style=flat-square)](https://github.com/crazy-max/ghaction-mage/releases/latest)
 [![GitHub marketplace](https://img.shields.io/badge/marketplace-mage--action-blue?logo=github&style=flat-square)](https://github.com/marketplace/actions/mage-action)
+[![Release workflow](https://github.com/crazy-max/ghaction-mage/workflows/release/badge.svg)](https://github.com/crazy-max/ghaction-mage/actions)
 [![Test workflow](https://github.com/crazy-max/ghaction-mage/workflows/test/badge.svg)](https://github.com/crazy-max/ghaction-mage/actions)
 [![Support me on Patreon](https://img.shields.io/badge/donate-patreon-f96854.svg?logo=patreon&style=flat-square)](https://www.patreon.com/crazymax) 
 [![Paypal Donate](https://img.shields.io/badge/donate-paypal-00457c.svg?logo=paypal&style=flat-square)](https://www.paypal.me/crazyws)
@@ -33,7 +34,7 @@ jobs:
         uses: actions/setup-go@master
       -
         name: Run Mage
-        uses: crazy-max/ghaction-mage@master
+        uses: crazy-max/ghaction-mage@v1
         with:
           version: latest
           args: -version
