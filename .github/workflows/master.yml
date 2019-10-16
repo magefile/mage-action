@@ -26,9 +26,6 @@ jobs:
           git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
           git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
       -
-        name: Lint check
-        run: tslint './src/*.ts'
-      -
         name: Commit and push changes
         run: |
           git add --all
