@@ -16,6 +16,10 @@ jobs:
         name: Checkout
         uses: actions/checkout@v1
       -
+        # https://github.com/actions/checkout/issues/6
+        name: "Fix detached HEAD"
+        run: git checkout ${GITHUB_REF#refs/heads/}
+      -
         name: Prune prod
         run: |
           rm -rf node_modules
@@ -35,4 +39,4 @@ jobs:
           git status --short -uno
           git commit -m 'Update node_modules'
           git show --stat-count=10 HEAD
-          git push -f origin refs/heads/master:refs/heads/master
+          git push
