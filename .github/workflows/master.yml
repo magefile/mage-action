@@ -35,4 +35,4 @@ jobs:
           git status --short -uno
           git commit -m 'Update node_modules'
           git show --stat-count=10 HEAD
-          git push -f origin master:master
+          git push -f origin refs/heads/master:refs/heads/master
