@@ -6,6 +6,7 @@ on:
       - 'master'
     paths:
       - 'package.*'
+      - '.github/workflows/master.yml'
 
 jobs:
   prune:
@@ -16,7 +17,9 @@ jobs:
         uses: actions/checkout@v1
       -
         name: Prune prod
-        run: npm prune --production
+        run: |
+          rm -rf node_modules
+          npm install --production
       -
         name: Set up Git
         env:
