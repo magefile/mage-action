@@ -18,11 +18,7 @@ export async function getMage(version: string): Promise<string> {
   console.log(`✅ Mage version found: ${version}`);
   const tmpdir = fs.mkdtempSync(path.join(os.tmpdir(), 'mage-'));
   const fileName = getFileName(version);
-  const downloadUrl = util.format(
-    'https://github.com/magefile/mage/releases/download/v%s/%s',
-    version,
-    fileName
-  );
+  const downloadUrl = util.format('https://github.com/magefile/mage/releases/download/v%s/%s', version, fileName);
 
   console.log(`⬇️ Downloading ${downloadUrl}...`);
   await download.default(downloadUrl, tmpdir, {filename: fileName});
@@ -39,8 +35,7 @@ export async function getMage(version: string): Promise<string> {
 }
 
 function getFileName(version: string): string {
-  const platform: string =
-    osPlat == 'win32' ? 'Windows' : osPlat == 'darwin' ? 'macOS' : 'Linux';
+  const platform: string = osPlat == 'win32' ? 'Windows' : osPlat == 'darwin' ? 'macOS' : 'Linux';
   const arch: string = osArch == 'x64' ? '64bit' : '32bit';
   const ext: string = osPlat == 'win32' ? 'zip' : 'tar.gz';
   return util.format('mage_%s_%s-%s.%s', version, platform, arch, ext);
@@ -51,28 +46,19 @@ interface GitHubRelease {
 }
 
 async function determineVersion(version: string): Promise<string> {
-  let rest: restm.RestClient = new restm.RestClient(
-    'ghaction-mage',
-    'https://github.com',
-    undefined,
-    {
-      headers: {
-        Accept: 'application/json'
-      }
+  let rest: restm.RestClient = new restm.RestClient('ghaction-mage', 'https://github.com', undefined, {
+    headers: {
+      Accept: 'application/json'
     }
-  );
+  });
 
   if (version !== 'latest') {
     version = `v${version}`;
   }
 
-  let res: restm.IRestResponse<GitHubRelease> = await rest.get<GitHubRelease>(
-    `/magefile/mage/releases/${version}`
-  );
+  let res: restm.IRestResponse<GitHubRelease> = await rest.get<GitHubRelease>(`/magefile/mage/releases/${version}`);
   if (res.statusCode != 200 || res.result === null) {
-    throw new Error(
-      `Cannot find Mage ${version} release (http ${res.statusCode})`
-    );
+    throw new Error(`Cannot find Mage ${version} release (http ${res.statusCode})`);
   }
 
   return res.result.tag_name.replace(/^v/, '');
