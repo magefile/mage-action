@@ -1,6 +1,5 @@
 [![GitHub release](https://img.shields.io/github/release/crazy-max/ghaction-mage.svg?style=flat-square)](https://github.com/crazy-max/ghaction-mage/releases/latest)
 [![GitHub marketplace](https://img.shields.io/badge/marketplace-mage--action-blue?logo=github&style=flat-square)](https://github.com/marketplace/actions/mage-action)
-[![Release workflow](https://github.com/crazy-max/ghaction-mage/workflows/release/badge.svg)](https://github.com/crazy-max/ghaction-mage/actions?workflow=release)
 [![Test workflow](https://github.com/crazy-max/ghaction-mage/workflows/test/badge.svg)](https://github.com/crazy-max/ghaction-mage/actions?workflow=test)
 [![Become a sponsor](https://img.shields.io/badge/sponsor-crazy--max-181717.svg?logo=github&style=flat-square)](https://github.com/sponsors/crazy-max)
 [![Paypal Donate](https://img.shields.io/badge/donate-paypal-00457c.svg?logo=paypal&style=flat-square)](https://www.paypal.me/crazyws)
