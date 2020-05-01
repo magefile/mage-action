@@ -12,8 +12,6 @@ If you are interested, [check out](https://git.io/Je09Y) my other :octocat: GitH
 
 ## Usage
 
-Below is a simple snippet to use this action. A [live example](https://github.com/crazy-max/ghaction-mage/actions) is also available for this repository.
-
 ```yaml
 name: mage
 
