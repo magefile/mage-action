@@ -25,10 +25,10 @@ jobs:
     steps:
       -
         name: Checkout
-        uses: actions/checkout@v1
+        uses: actions/checkout@v2
       -
         name: Set up Go
-        uses: actions/setup-go@v1
+        uses: actions/setup-go@v2
       -
         name: Run Mage
         uses: crazy-max/ghaction-mage@v1
