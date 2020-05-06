@@ -1,14 +1,10 @@
 {
   "name": "mage-action",
-  "private": true,
   "description": "GitHub Action for Mage, a Make/rake-like build tool using Go",
   "main": "lib/main.js",
-  "directories": {
-    "lib": "lib"
-  },
   "scripts": {
     "build": "tsc && ncc build",
-    "test": "jest",
+    "test": "jest --coverage",
     "format": "prettier --write **/*.ts",
     "format-check": "prettier --check **/*.ts",
     "pre-checkin": "npm run format && npm run build"
