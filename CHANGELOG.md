@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.3.0 (2020/05/07)
+
+* Use native GitHub Action tools to download assets and use GitHub API
+* Cleanup local paths from extra fields
+* Use `core.info` instead of `console.log`
+
 ## 1.2.0 (2020/05/06)
 
 * Add Codecov
