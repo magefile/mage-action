@@ -46,7 +46,7 @@ Following inputs can be used as `step.with` keys
 
 | Name          | Type    | Default   | Description                      |
 |---------------|---------|-----------|----------------------------------|
-| `version`     | String  | `latest`  | Mage version. Example: `1.9.0`   |
+| `version`     | String  | `latest`  | Mage version. Example: `v1.9.0`  |
 | `args`        | String  |           | Arguments to pass to Mage        |
 
 ## How can I help ?
