@@ -1,12 +1,14 @@
 name: test
 
 on:
-  pull_request:
-    branches:
-      - master
   push:
     branches:
-      - master
+      - 'master'
+    paths-ignore:
+      - '**.md'
+  pull_request:
+    paths-ignore:
+      - '**.md'
 
 jobs:
   test:
@@ -29,6 +31,10 @@ jobs:
       -
         name: Test
         run: npm run test
+      -
+        name: Audit packages
+        run: npm audit --audit-level=high
+        if: matrix.os == 'ubuntu-latest'
       -
         # https://github.com/codecov/codecov-action
         name: Upload coverage
