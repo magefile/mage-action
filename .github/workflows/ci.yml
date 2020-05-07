@@ -20,7 +20,7 @@ jobs:
           - windows-latest
         version:
           - latest
-          - 1.8.0
+          - v1.8.0
     steps:
       -
         name: Checkout
