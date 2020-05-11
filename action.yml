@@ -10,8 +10,10 @@ inputs:
   version:
     description: 'Mage version.'
     default: 'latest'
+    required: false
   args:
     description: 'Arguments to pass to Mage'
+    required: false
 
 runs:
   using: 'node12'
