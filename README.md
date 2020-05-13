@@ -13,12 +13,6 @@
 
 ___
 
-* [Usage](#usage)
-  * [Workflow](#workflow)
-* [Customizing](#customizing)
-  * [inputs](#inputs)
-* [License](#license)
-
 ## Usage
 
 ### Workflow
@@ -40,13 +34,17 @@ jobs:
       -
         name: Set up Go
         uses: actions/setup-go@v2
+        with:
+          go-version: 1.14
       -
         name: Run Mage
         uses: magefile/mage-action@v1
         with:
           version: latest
-          args: -version
+          args: build
 ```
+
+> For detailed instructions please follow GitHub Actions [workflow syntax](https://help.github.com/en/articles/workflow-syntax-for-github-actions#About-yaml-syntax-for-workflows).
 
 ## Customizing
 
@@ -58,6 +56,7 @@ Following inputs can be used as `step.with` keys
 |---------------|---------|-----------|----------------------------------|
 | `version`     | String  | `latest`  | Mage version. Example: `v1.9.0`  |
 | `args`        | String  |           | Arguments to pass to Mage        |
+| `workdir`     | String  | `.`       | Working directory (below repository root) |
 
 ## License
 

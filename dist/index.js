@@ -1297,7 +1297,12 @@ function run() {
         try {
             const version = core.getInput('version') || 'latest';
             const args = core.getInput('args');
+            const workdir = core.getInput('workdir') || '.';
             const mage = yield installer.getMage(version);
+            if (workdir && workdir !== '.') {
+                core.info(`📂 Using ${workdir} as working directory...`);
+                process.chdir(workdir);
+            }
             core.info('🏃 Running Mage...');
             yield exec.exec(`${mage} ${args}`);
         }
