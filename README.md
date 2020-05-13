@@ -13,6 +13,8 @@
 
 ___
 
+![Mage Action](.github/mage-action.png)
+
 ## Usage
 
 ### Workflow
