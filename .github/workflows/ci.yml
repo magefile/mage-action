@@ -35,4 +35,5 @@ jobs:
         uses: ./
         with:
           version: ${{ matrix.version }}
-          args: -version
+          args: build
+          workdir: test
