@@ -6,7 +6,7 @@ on:
       - 'master'
       - 'releases/*'
     paths:
-      - '.github/workflows/gosum.yml'
+      - '.github/workflows/ncc.yml'
       - '__tests__/*'
       - 'src/*'
       - 'package*.json'
