@@ -7,6 +7,6 @@ export interface GitHubRelease {
 
 export const getRelease = async (version: string): Promise<GitHubRelease | null> => {
   const url: string = `https://github.com/magefile/mage/releases/${version}`;
-  const http: httpm.HttpClient = new httpm.HttpClient('ghaction-mage');
+  const http: httpm.HttpClient = new httpm.HttpClient('mage-action');
   return (await http.getJson<GitHubRelease>(url)).result;
 };

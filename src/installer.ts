@@ -36,7 +36,7 @@ export async function getMage(version: string): Promise<string> {
   }
   core.debug(`Extracted to ${extPath}`);
 
-  const cachePath: string = await tc.cacheDir(extPath, 'ghaction-mage', semver);
+  const cachePath: string = await tc.cacheDir(extPath, 'mage-action', semver);
   core.debug(`Cached to ${cachePath}`);
 
   const exePath: string = path.join(cachePath, osPlat == 'win32' ? 'mage.exe' : 'mage');

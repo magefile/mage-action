@@ -3422,9 +3422,10 @@ function extract7z(file, dest, _7zPath) {
         process.chdir(dest);
         if (_7zPath) {
             try {
+                const logLevel = core.isDebug() ? '-bb1' : '-bb0';
                 const args = [
                     'x',
-                    '-bb1',
+                    logLevel,
                     '-bd',
                     '-sccUTF-8',
                     file
@@ -3501,6 +3502,9 @@ function extractTar(file, dest, flags = 'xz') {
         const isGnuTar = versionOutput.toUpperCase().includes('GNU TAR');
         // Initialize args
         const args = [flags];
+        if (core.isDebug() && !flags.includes('v')) {
+            args.push('-v');
+        }
         let destArg = dest;
         let fileArg = file;
         if (IS_WINDOWS && isGnuTar) {
@@ -3550,7 +3554,7 @@ function extractZipWin(file, dest) {
         const escapedDest = dest.replace(/'/g, "''").replace(/"|\n|\r/g, '');
         const command = `$ErrorActionPreference = 'Stop' ; try { Add-Type -AssemblyName System.IO.Compression.FileSystem } catch { } ; [System.IO.Compression.ZipFile]::ExtractToDirectory('${escapedFile}', '${escapedDest}')`;
         // run powershell
-        const powershellPath = yield io.which('powershell');
+        const powershellPath = yield io.which('powershell', true);
         const args = [
             '-NoLogo',
             '-Sta',
@@ -3566,8 +3570,12 @@ function extractZipWin(file, dest) {
 }
 function extractZipNix(file, dest) {
     return __awaiter(this, void 0, void 0, function* () {
-        const unzipPath = yield io.which('unzip');
-        yield exec_1.exec(`"${unzipPath}"`, [file], { cwd: dest });
+        const unzipPath = yield io.which('unzip', true);
+        const args = [file];
+        if (!core.isDebug()) {
+            args.unshift('-q');
+        }
+        yield exec_1.exec(`"${unzipPath}"`, args, { cwd: dest });
     });
 }
 /**
@@ -4662,7 +4670,7 @@ function getMage(version) {
             extPath = yield tc.extractTar(downloadPath);
         }
         core.debug(`Extracted to ${extPath}`);
-        const cachePath = yield tc.cacheDir(extPath, 'ghaction-mage', semver);
+        const cachePath = yield tc.cacheDir(extPath, 'mage-action', semver);
         core.debug(`Cached to ${cachePath}`);
         const exePath = path.join(cachePath, osPlat == 'win32' ? 'mage.exe' : 'mage');
         core.debug(`Exe path is ${exePath}`);
@@ -4725,7 +4733,7 @@ exports.getRelease = void 0;
 const httpm = __importStar(__webpack_require__(539));
 exports.getRelease = (version) => __awaiter(void 0, void 0, void 0, function* () {
     const url = `https://github.com/magefile/mage/releases/${version}`;
-    const http = new httpm.HttpClient('ghaction-mage');
+    const http = new httpm.HttpClient('mage-action');
     return (yield http.getJson(url)).result;
 });
 //# sourceMappingURL=github.js.map
