@@ -1,17 +1,27 @@
-[![GitHub release](https://img.shields.io/github/release/crazy-max/ghaction-mage.svg?style=flat-square)](https://github.com/crazy-max/ghaction-mage/releases/latest)
-[![GitHub marketplace](https://img.shields.io/badge/marketplace-mage--action-blue?logo=github&style=flat-square)](https://github.com/marketplace/actions/mage-action)
-[![Test workflow](https://img.shields.io/github/workflow/status/crazy-max/ghaction-mage/test?label=test&logo=github&style=flat-square)](https://github.com/crazy-max/ghaction-mage/actions?workflow=test)
-[![Codecov](https://img.shields.io/codecov/c/github/crazy-max/ghaction-mage?logo=codecov&style=flat-square)](https://codecov.io/gh/crazy-max/ghaction-mage)
-[![Become a sponsor](https://img.shields.io/badge/sponsor-crazy--max-181717.svg?logo=github&style=flat-square)](https://github.com/sponsors/crazy-max)
-[![Paypal Donate](https://img.shields.io/badge/donate-paypal-00457c.svg?logo=paypal&style=flat-square)](https://www.paypal.me/crazyws)
+<p align="center">
+  <img alt="Mage Logo" src="https://avatars2.githubusercontent.com/u/32144377?s=200&v=4" height="200" />
+  <h3 align="center">Mage Action</h3>
+  <p align="center"><a href="https://github.com/features/actions">GitHub Action</a> for Mage</p>
+  <p align="center">
+    <a href="https://github.com/magefile/mage-action/releases/latest"><img alt="GitHub release" src="https://img.shields.io/github/release/magefile/mage-action.svg?logo=github&style=flat-square"></a>
+    <a href="https://github.com/marketplace/actions/mage-action"><img alt="GitHub marketplace" src="https://img.shields.io/badge/marketplace-mage--action-blue?logo=github&style=flat-square"></a>
+    <a href="https://github.com/magefile/mage-action/actions?workflow=test"><img alt="Test workflow" src="https://img.shields.io/github/workflow/status/magefile/mage-action/test?label=test&logo=github&style=flat-square"></a>
+    <a href="https://codecov.io/gh/magefile/mage-action"><img alt="Codecov" src="https://img.shields.io/codecov/c/github/magefile/mage-action?logo=codecov&style=flat-square"></a>
+    <a href="https://github.com/sponsors/crazy-max"><img src="https://img.shields.io/badge/sponsor-crazy--max-181717.svg?logo=github&style=flat-square" alt="Become a sponsor"></a>
+  </p>
+</p>
 
-## About
+___
 
-GitHub Action for [Mage](https://magefile.org/), a Make/rake-like build tool using Go.
-
-If you are interested, [check out](https://git.io/Je09Y) my other :octocat: GitHub Actions!
+* [Usage](#usage)
+  * [Workflow](#workflow)
+* [Customizing](#customizing)
+  * [inputs](#inputs)
+* [License](#license)
 
 ## Usage
+
+### Workflow
 
 ```yaml
 name: mage
@@ -32,7 +42,7 @@ jobs:
         uses: actions/setup-go@v2
       -
         name: Run Mage
-        uses: crazy-max/ghaction-mage@v1
+        uses: magefile/mage-action@v1
         with:
           version: latest
           args: -version
@@ -48,12 +58,6 @@ Following inputs can be used as `step.with` keys
 |---------------|---------|-----------|----------------------------------|
 | `version`     | String  | `latest`  | Mage version. Example: `v1.9.0`  |
 | `args`        | String  |           | Arguments to pass to Mage        |
-
-## How can I help ?
-
-All kinds of contributions are welcome :raised_hands:! The most basic way to show your support is to star :star2: the project, or to raise issues :speech_balloon: You can also support this project by [**becoming a sponsor on GitHub**](https://github.com/sponsors/crazy-max) :clap: or by making a [Paypal donation](https://www.paypal.me/crazyws) to ensure this journey continues indefinitely! :rocket:
-
-Thanks again for your support, it is much appreciated! :pray:
 
 ## License
 
