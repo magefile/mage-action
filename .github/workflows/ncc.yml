@@ -34,4 +34,3 @@ jobs:
           title: "fix: update generated content"
           branch: update-generated-content
           branch-suffix: timestamp
-          labels: automerge
