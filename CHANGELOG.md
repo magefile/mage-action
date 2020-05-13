@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.4.0 (2020/05/14)
+
+* Move repository to [Mage](https://github.com/magefile/) org (magefile/mage#305)
+* Add `workdir` input
+* Add real CI tests
+* Update deps
+
 ## 1.3.0 (2020/05/07)
 
 * Use native GitHub Action tools to download assets and use GitHub API
