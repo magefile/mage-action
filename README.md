@@ -15,9 +15,13 @@ ___
 
 ![Mage Action](.github/mage-action.png)
 
-## Usage
+* [Usage](#usage)
+* [Customizing](#customizing)
+  * [inputs](#inputs)
+* [Keep up-to-date with GitHub Dependabot](#keep-up-to-date-with-github-dependabot)
+* [License](#license)
 
-### Workflow
+## Usage
 
 ```yaml
 name: mage
@@ -59,6 +63,22 @@ Following inputs can be used as `step.with` keys
 | `version`     | String  | `latest`  | Mage version. Example: `v1.9.0`  |
 | `args`        | String  |           | Arguments to pass to Mage        |
 | `workdir`     | String  | `.`       | Working directory (below repository root) |
+
+## Keep up-to-date with GitHub Dependabot
+
+Since [Dependabot](https://docs.github.com/en/github/administering-a-repository/keeping-your-actions-up-to-date-with-github-dependabot)
+has [native GitHub Actions support](https://docs.github.com/en/github/administering-a-repository/configuration-options-for-dependency-updates#package-ecosystem),
+to enable it on your GitHub repo all you need to do is add the `.github/dependabot.yml` file:
+
+```yaml
+version: 2
+updates:
+  # Maintain dependencies for GitHub Actions
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "daily"
+```
 
 ## License
 
