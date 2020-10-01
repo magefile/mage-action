@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.4.1 (2020/10/01)
+
+* Fix CVE-2020-15228
+
 ## 1.4.0 (2020/05/14)
 
 * Move repository to [Mage](https://github.com/magefile/) org (magefile/mage#305)
