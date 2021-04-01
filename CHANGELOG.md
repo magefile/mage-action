@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.5.0 (2021/04/01)
+
+* Bump y18n from 4.0.0 to 4.0.1 (#220)
+* Container dev workflow (#219)
+* Bump node-notifier from 8.0.0 to 8.0.1 (#215)
+* Bump @actions/tool-cache from 1.6.0 to 1.6.1 (#214)
+* Bump @actions/http-client from 1.0.8 to 1.0.11 (#211 #218)
+
 ## 1.4.1 (2020/10/01)
 
 * Fix CVE-2020-15228
