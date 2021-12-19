@@ -6,16 +6,13 @@ async function run(): Promise<void> {
   try {
     const version = core.getInput('version') || 'latest';
     const args = core.getInput('args');
-    const workdir = core.getInput('workdir') || '.';
+    const workdir = core.getInput('workdir') || process.env['GITHUB_WORKSPACE'] || '.';
     const mage = await installer.getMage(version);
 
-    if (workdir && workdir !== '.') {
-      core.info(`📂 Using ${workdir} as working directory...`);
-      process.chdir(workdir);
-    }
-
-    core.info('🏃 Running Mage...');
-    await exec.exec(`${mage} ${args}`);
+    core.info('Running Mage...');
+    await exec.exec(`${mage} ${args}`, undefined, {
+      cwd: workdir
+    });
   } catch (error) {
     core.setFailed(error.message);
   }
