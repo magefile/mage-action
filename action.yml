@@ -16,7 +16,6 @@ inputs:
     required: false
   workdir:
     description: 'Working directory (below repository root)'
-    default: '.'
     required: false
 
 runs:

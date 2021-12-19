@@ -15,7 +15,7 @@ export async function getMage(version: string): Promise<string> {
   }
   const semver: string = release.tag_name.replace(/^v/, '');
 
-  core.info(`✅ Mage version found: ${release.tag_name}`);
+  core.info(`Mage version found: ${release.tag_name}`);
   const filename: string = getFilename(semver);
   const downloadUrl: string = util.format(
     'https://github.com/magefile/mage/releases/download/%s/%s',
@@ -23,11 +23,11 @@ export async function getMage(version: string): Promise<string> {
     filename
   );
 
-  core.info(`⬇️ Downloading ${downloadUrl}...`);
+  core.info(`Downloading ${downloadUrl}...`);
   const downloadPath: string = await tc.downloadTool(downloadUrl);
   core.debug(`Downloaded to ${downloadPath}`);
 
-  core.info('📦 Extracting Mage...');
+  core.info('Extracting Mage...');
   let extPath: string;
   if (osPlat == 'win32') {
     extPath = await tc.extractZip(downloadPath);
