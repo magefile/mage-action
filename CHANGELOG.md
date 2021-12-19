@@ -1,5 +1,16 @@
 # Changelog
 
+## 1.6.0 (2021/12/20)
+
+* Fix working dir (#241)
+* Bump ansi-regex from 5.0.0 to 5.0.1 (#240)
+* Bump tmpl from 1.0.4 to 1.0.5 (#238)
+* Bump path-parse from 1.0.6 to 1.0.7 (#236)
+* Bump ws from 7.3.0 to 7.4.6 (#231)
+* Bump hosted-git-info from 2.8.8 to 2.8.9 (#224)
+* Bump lodash from 4.17.19 to 4.17.21 (#223)
+* Bump @actions/core from 1.2.6 to 1.2.7 (#221)
+
 ## 1.5.0 (2021/04/01)
 
 * Bump y18n from 4.0.0 to 4.0.1 (#220)
