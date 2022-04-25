@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.7.0 (2022/04/25)
+
+* Update dev dependencies and workflow (#249)
+* Bump @actions/core from 1.3.0 to 1.6.0 (#239)
+* Bump minimist from 1.2.5 to 1.2.6 (#246)
+* Bump @actions/exec from 1.0.4 to 1.1.1 (#245)
+* Bump @actions/tool-cache from 1.6.1 to 1.7.2 (#244)
+
 ## 1.6.0 (2021/12/20)
 
 * Fix working dir (#241)
