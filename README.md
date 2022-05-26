@@ -44,7 +44,7 @@ jobs:
           go-version: 1.14
       -
         name: Run Mage
-        uses: magefile/mage-action@v1
+        uses: magefile/mage-action@v2
         with:
           version: latest
           args: build
