@@ -47,7 +47,7 @@ export async function getMage(version: string): Promise<string> {
 
 const getFilename = (semver: string): string => {
   const platform: string = osPlat == 'win32' ? 'Windows' : osPlat == 'darwin' ? 'macOS' : 'Linux';
-  const arch: string = osArch == 'x64' ? '64bit' : '32bit';
+  const arch: string = osArch == 'x64' ? '64bit' : osArch == 'arm64' ? 'ARM64' : '32bit';
   const ext: string = osPlat == 'win32' ? 'zip' : 'tar.gz';
   return util.format('mage_%s_%s-%s.%s', semver, platform, arch, ext);
 };
