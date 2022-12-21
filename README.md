@@ -5,7 +5,7 @@
   <p align="center">
     <a href="https://github.com/magefile/mage-action/releases/latest"><img alt="GitHub release" src="https://img.shields.io/github/release/magefile/mage-action.svg?logo=github&style=flat-square"></a>
     <a href="https://github.com/marketplace/actions/mage-action"><img alt="GitHub marketplace" src="https://img.shields.io/badge/marketplace-mage--action-blue?logo=github&style=flat-square"></a>
-    <a href="https://github.com/magefile/mage-action/actions?workflow=test"><img alt="Test workflow" src="https://img.shields.io/github/workflow/status/magefile/mage-action/test?label=test&logo=github&style=flat-square"></a>
+    <a href="https://github.com/magefile/mage-action/actions?workflow=test"><img alt="Test workflow" src="https://img.shields.io/github/actions/workflow/status/magefile/mage-action/test.yml?branch=master&label=test&logo=github&style=flat-square"></a>
     <a href="https://codecov.io/gh/magefile/mage-action"><img alt="Codecov" src="https://img.shields.io/codecov/c/github/magefile/mage-action?logo=codecov&style=flat-square"></a>
     <a href="https://github.com/sponsors/crazy-max"><img src="https://img.shields.io/badge/sponsor-crazy--max-181717.svg?logo=github&style=flat-square" alt="Become a sponsor"></a>
   </p>
