@@ -9,7 +9,7 @@ const osPlat: string = os.platform();
 const osArch: string = os.arch();
 
 export async function getMage(version: string): Promise<string> {
-  const release: github.GitHubRelease | null = await github.getRelease(version);
+  const release = await github.getRelease(version);
   if (!release) {
     throw new Error(`Cannot find Mage ${version} release`);
   }

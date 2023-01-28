@@ -1,6 +1,6 @@
-import * as httpm from '@actions/http-client';
+import {Octokit} from '@octokit/action';
 
-const RELEASE_API_ENDPOINT = 'https://api.github.com/repos/magefile/mage/releases';
+const octokit = new Octokit();
 
 export interface GitHubRelease {
   id: number;
@@ -8,11 +8,20 @@ export interface GitHubRelease {
 }
 
 export const getRelease = async (version: string): Promise<GitHubRelease | null> => {
-  const http: httpm.HttpClient = new httpm.HttpClient('mage-action');
+  const octokitRelease = await getOctokitRelease(version);
+  return octokitRelease.data;
+};
+
+const getOctokitRelease = (version: string) => {
   if (version === 'latest') {
-    const url = `${RELEASE_API_ENDPOINT}/${version}`;
-    return (await http.getJson<GitHubRelease>(url)).result;
+    return octokit.repos.getLatestRelease({
+      owner: 'magefile',
+      repo: 'mage'
+    });
   }
-  const tagUrl = `${RELEASE_API_ENDPOINT}/tags/${version}`;
-  return (await http.getJson<GitHubRelease>(tagUrl)).result;
+  return octokit.repos.getReleaseByTag({
+    owner: 'magefile',
+    repo: 'mage',
+    tag: version
+  });
 };
