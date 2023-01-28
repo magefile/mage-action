@@ -8,14 +8,17 @@ import * as tc from '@actions/tool-cache';
 const osPlat: string = os.platform();
 const osArch: string = os.arch();
 
-export async function getMage(version: string): Promise<string> {
-  const release: github.GitHubRelease | null = await github.getRelease(version);
-  if (!release) {
-    throw new Error(`Cannot find Mage ${version} release`);
+export async function getMage(version: string, githubToken: string): Promise<string> {
+  let release: github.Release;
+  if (version == 'latest') {
+    release = await github.getLatestRelease(githubToken);
+  } else {
+    release = await github.getReleaseTag(version, githubToken);
   }
-  const semver: string = release.tag_name.replace(/^v/, '');
 
+  const semver: string = release.tag_name.replace(/^v/, '');
   core.info(`Mage version found: ${release.tag_name}`);
+
   const filename: string = getFilename(semver);
   const downloadUrl: string = util.format(
     'https://github.com/magefile/mage/releases/download/%s/%s',
