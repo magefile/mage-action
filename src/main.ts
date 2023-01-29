@@ -7,8 +7,7 @@ async function run(): Promise<void> {
     const version = core.getInput('version') || 'latest';
     const args = core.getInput('args');
     const workdir = core.getInput('workdir') || process.env['GITHUB_WORKSPACE'] || '.';
-    const githubToken = core.getInput('github_token');
-    const mage = await installer.getMage(version, githubToken);
+    const mage = await installer.getMage(version);
 
     core.info('Running Mage...');
     await exec.exec(`${mage} ${args}`, undefined, {
