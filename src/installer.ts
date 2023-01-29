@@ -1,21 +1,38 @@
 import * as os from 'os';
 import * as path from 'path';
 import * as util from 'util';
-import * as github from './github';
 import * as core from '@actions/core';
+import * as httpm from '@actions/http-client';
 import * as tc from '@actions/tool-cache';
 
 const osPlat: string = os.platform();
 const osArch: string = os.arch();
 
-export async function getMage(version: string, githubToken: string): Promise<string> {
-  let release: github.Release;
-  if (version == 'latest') {
-    release = await github.getLatestRelease(githubToken);
-  } else {
-    release = await github.getReleaseTag(version, githubToken);
-  }
+export interface GitHubRelease {
+  id: number;
+  tag_name: string;
+  html_url: string;
+  assets: Array<string>;
+}
 
+export const getRelease = async (version: string): Promise<GitHubRelease> => {
+  const url = `https://raw.githubusercontent.com/magefile/mage-action/master/.github/mage-releases.json`;
+  const http: httpm.HttpClient = new httpm.HttpClient('ghaction-setup-containerd');
+  const resp: httpm.HttpClientResponse = await http.get(url);
+  const body = await resp.readBody();
+  const statusCode = resp.message.statusCode || 500;
+  if (statusCode >= 400) {
+    throw new Error(`Failed to get Mage release ${version} from ${url} with status code ${statusCode}: ${body}`);
+  }
+  const releases = <Record<string, GitHubRelease>>JSON.parse(body);
+  if (!releases[version]) {
+    throw new Error(`Cannot find Mage release ${version} in ${url}`);
+  }
+  return releases[version];
+};
+
+export async function getMage(version: string): Promise<string> {
+  const release: GitHubRelease = await getRelease(version);
   const semver: string = release.tag_name.replace(/^v/, '');
   core.info(`Mage version found: ${release.tag_name}`);
 
