@@ -18,7 +18,7 @@ describe('getRelease', () => {
   });
 
   it('unknown release', async () => {
-    await expect(installer.getRelease('foo')).rejects.toThrowError(
+    await expect(installer.getRelease('foo')).rejects.toThrow(
       new Error(
         'Cannot find Mage release foo in https://raw.githubusercontent.com/magefile/mage-action/master/.github/mage-releases.json'
       )
