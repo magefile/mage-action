@@ -4,7 +4,6 @@
     "tag_name": "v1.14.0",
     "html_url": "https://github.com/magefile/mage/releases/tag/v1.14.0",
     "assets": [
-      "https://github.com/magefile/mage/releases/download/v1.14.0/mage_1.14.0_checksums.txt",
       "https://github.com/magefile/mage/releases/download/v1.14.0/mage_1.14.0_DragonFlyBSD-64bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.14.0/mage_1.14.0_FreeBSD-64bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.14.0/mage_1.14.0_FreeBSD-ARM.tar.gz",
@@ -12,15 +11,16 @@
       "https://github.com/magefile/mage/releases/download/v1.14.0/mage_1.14.0_Linux-64bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.14.0/mage_1.14.0_Linux-ARM.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.14.0/mage_1.14.0_Linux-ARM64.tar.gz",
-      "https://github.com/magefile/mage/releases/download/v1.14.0/mage_1.14.0_macOS-64bit.tar.gz",
-      "https://github.com/magefile/mage/releases/download/v1.14.0/mage_1.14.0_macOS-ARM64.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.14.0/mage_1.14.0_NetBSD-64bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.14.0/mage_1.14.0_NetBSD-ARM.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.14.0/mage_1.14.0_OpenBSD-64bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.14.0/mage_1.14.0_OpenBSD-ARM64.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.14.0/mage_1.14.0_Windows-64bit.zip",
       "https://github.com/magefile/mage/releases/download/v1.14.0/mage_1.14.0_Windows-ARM.zip",
-      "https://github.com/magefile/mage/releases/download/v1.14.0/mage_1.14.0_Windows-ARM64.zip"
+      "https://github.com/magefile/mage/releases/download/v1.14.0/mage_1.14.0_Windows-ARM64.zip",
+      "https://github.com/magefile/mage/releases/download/v1.14.0/mage_1.14.0_checksums.txt",
+      "https://github.com/magefile/mage/releases/download/v1.14.0/mage_1.14.0_macOS-64bit.tar.gz",
+      "https://github.com/magefile/mage/releases/download/v1.14.0/mage_1.14.0_macOS-ARM64.tar.gz"
     ]
   },
   "v1.14.0": {
@@ -28,7 +28,6 @@
     "tag_name": "v1.14.0",
     "html_url": "https://github.com/magefile/mage/releases/tag/v1.14.0",
     "assets": [
-      "https://github.com/magefile/mage/releases/download/v1.14.0/mage_1.14.0_checksums.txt",
       "https://github.com/magefile/mage/releases/download/v1.14.0/mage_1.14.0_DragonFlyBSD-64bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.14.0/mage_1.14.0_FreeBSD-64bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.14.0/mage_1.14.0_FreeBSD-ARM.tar.gz",
@@ -36,15 +35,16 @@
       "https://github.com/magefile/mage/releases/download/v1.14.0/mage_1.14.0_Linux-64bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.14.0/mage_1.14.0_Linux-ARM.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.14.0/mage_1.14.0_Linux-ARM64.tar.gz",
-      "https://github.com/magefile/mage/releases/download/v1.14.0/mage_1.14.0_macOS-64bit.tar.gz",
-      "https://github.com/magefile/mage/releases/download/v1.14.0/mage_1.14.0_macOS-ARM64.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.14.0/mage_1.14.0_NetBSD-64bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.14.0/mage_1.14.0_NetBSD-ARM.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.14.0/mage_1.14.0_OpenBSD-64bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.14.0/mage_1.14.0_OpenBSD-ARM64.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.14.0/mage_1.14.0_Windows-64bit.zip",
       "https://github.com/magefile/mage/releases/download/v1.14.0/mage_1.14.0_Windows-ARM.zip",
-      "https://github.com/magefile/mage/releases/download/v1.14.0/mage_1.14.0_Windows-ARM64.zip"
+      "https://github.com/magefile/mage/releases/download/v1.14.0/mage_1.14.0_Windows-ARM64.zip",
+      "https://github.com/magefile/mage/releases/download/v1.14.0/mage_1.14.0_checksums.txt",
+      "https://github.com/magefile/mage/releases/download/v1.14.0/mage_1.14.0_macOS-64bit.tar.gz",
+      "https://github.com/magefile/mage/releases/download/v1.14.0/mage_1.14.0_macOS-ARM64.tar.gz"
     ]
   },
   "v1.13.0": {
@@ -52,7 +52,6 @@
     "tag_name": "v1.13.0",
     "html_url": "https://github.com/magefile/mage/releases/tag/v1.13.0",
     "assets": [
-      "https://github.com/magefile/mage/releases/download/v1.13.0/mage_1.13.0_checksums.txt",
       "https://github.com/magefile/mage/releases/download/v1.13.0/mage_1.13.0_DragonFlyBSD-64bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.13.0/mage_1.13.0_FreeBSD-64bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.13.0/mage_1.13.0_FreeBSD-ARM.tar.gz",
@@ -60,15 +59,16 @@
       "https://github.com/magefile/mage/releases/download/v1.13.0/mage_1.13.0_Linux-64bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.13.0/mage_1.13.0_Linux-ARM.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.13.0/mage_1.13.0_Linux-ARM64.tar.gz",
-      "https://github.com/magefile/mage/releases/download/v1.13.0/mage_1.13.0_macOS-64bit.tar.gz",
-      "https://github.com/magefile/mage/releases/download/v1.13.0/mage_1.13.0_macOS-ARM64.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.13.0/mage_1.13.0_NetBSD-64bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.13.0/mage_1.13.0_NetBSD-ARM.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.13.0/mage_1.13.0_OpenBSD-64bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.13.0/mage_1.13.0_OpenBSD-ARM64.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.13.0/mage_1.13.0_Windows-64bit.zip",
       "https://github.com/magefile/mage/releases/download/v1.13.0/mage_1.13.0_Windows-ARM.zip",
-      "https://github.com/magefile/mage/releases/download/v1.13.0/mage_1.13.0_Windows-ARM64.zip"
+      "https://github.com/magefile/mage/releases/download/v1.13.0/mage_1.13.0_Windows-ARM64.zip",
+      "https://github.com/magefile/mage/releases/download/v1.13.0/mage_1.13.0_checksums.txt",
+      "https://github.com/magefile/mage/releases/download/v1.13.0/mage_1.13.0_macOS-64bit.tar.gz",
+      "https://github.com/magefile/mage/releases/download/v1.13.0/mage_1.13.0_macOS-ARM64.tar.gz"
     ]
   },
   "v1.12.1": {
@@ -76,7 +76,6 @@
     "tag_name": "v1.12.1",
     "html_url": "https://github.com/magefile/mage/releases/tag/v1.12.1",
     "assets": [
-      "https://github.com/magefile/mage/releases/download/v1.12.1/mage_1.12.1_checksums.txt",
       "https://github.com/magefile/mage/releases/download/v1.12.1/mage_1.12.1_DragonFlyBSD-64bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.12.1/mage_1.12.1_FreeBSD-64bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.12.1/mage_1.12.1_FreeBSD-ARM.tar.gz",
@@ -84,15 +83,16 @@
       "https://github.com/magefile/mage/releases/download/v1.12.1/mage_1.12.1_Linux-64bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.12.1/mage_1.12.1_Linux-ARM.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.12.1/mage_1.12.1_Linux-ARM64.tar.gz",
-      "https://github.com/magefile/mage/releases/download/v1.12.1/mage_1.12.1_macOS-64bit.tar.gz",
-      "https://github.com/magefile/mage/releases/download/v1.12.1/mage_1.12.1_macOS-ARM64.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.12.1/mage_1.12.1_NetBSD-64bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.12.1/mage_1.12.1_NetBSD-ARM.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.12.1/mage_1.12.1_OpenBSD-64bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.12.1/mage_1.12.1_OpenBSD-ARM64.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.12.1/mage_1.12.1_Windows-64bit.zip",
       "https://github.com/magefile/mage/releases/download/v1.12.1/mage_1.12.1_Windows-ARM.zip",
-      "https://github.com/magefile/mage/releases/download/v1.12.1/mage_1.12.1_Windows-ARM64.zip"
+      "https://github.com/magefile/mage/releases/download/v1.12.1/mage_1.12.1_Windows-ARM64.zip",
+      "https://github.com/magefile/mage/releases/download/v1.12.1/mage_1.12.1_checksums.txt",
+      "https://github.com/magefile/mage/releases/download/v1.12.1/mage_1.12.1_macOS-64bit.tar.gz",
+      "https://github.com/magefile/mage/releases/download/v1.12.1/mage_1.12.1_macOS-ARM64.tar.gz"
     ]
   },
   "v1.12.0": {
@@ -100,7 +100,6 @@
     "tag_name": "v1.12.0",
     "html_url": "https://github.com/magefile/mage/releases/tag/v1.12.0",
     "assets": [
-      "https://github.com/magefile/mage/releases/download/v1.12.0/mage_1.12.0_checksums.txt",
       "https://github.com/magefile/mage/releases/download/v1.12.0/mage_1.12.0_DragonFlyBSD-64bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.12.0/mage_1.12.0_FreeBSD-64bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.12.0/mage_1.12.0_FreeBSD-ARM.tar.gz",
@@ -108,15 +107,16 @@
       "https://github.com/magefile/mage/releases/download/v1.12.0/mage_1.12.0_Linux-64bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.12.0/mage_1.12.0_Linux-ARM.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.12.0/mage_1.12.0_Linux-ARM64.tar.gz",
-      "https://github.com/magefile/mage/releases/download/v1.12.0/mage_1.12.0_macOS-64bit.tar.gz",
-      "https://github.com/magefile/mage/releases/download/v1.12.0/mage_1.12.0_macOS-ARM64.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.12.0/mage_1.12.0_NetBSD-64bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.12.0/mage_1.12.0_NetBSD-ARM.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.12.0/mage_1.12.0_OpenBSD-64bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.12.0/mage_1.12.0_OpenBSD-ARM64.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.12.0/mage_1.12.0_Windows-64bit.zip",
       "https://github.com/magefile/mage/releases/download/v1.12.0/mage_1.12.0_Windows-ARM.zip",
-      "https://github.com/magefile/mage/releases/download/v1.12.0/mage_1.12.0_Windows-ARM64.zip"
+      "https://github.com/magefile/mage/releases/download/v1.12.0/mage_1.12.0_Windows-ARM64.zip",
+      "https://github.com/magefile/mage/releases/download/v1.12.0/mage_1.12.0_checksums.txt",
+      "https://github.com/magefile/mage/releases/download/v1.12.0/mage_1.12.0_macOS-64bit.tar.gz",
+      "https://github.com/magefile/mage/releases/download/v1.12.0/mage_1.12.0_macOS-ARM64.tar.gz"
     ]
   },
   "v1.11.0": {
@@ -124,18 +124,18 @@
     "tag_name": "v1.11.0",
     "html_url": "https://github.com/magefile/mage/releases/tag/v1.11.0",
     "assets": [
-      "https://github.com/magefile/mage/releases/download/v1.11.0/mage_1.11.0_checksums.txt",
       "https://github.com/magefile/mage/releases/download/v1.11.0/mage_1.11.0_DragonFlyBSD-64bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.11.0/mage_1.11.0_FreeBSD-64bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.11.0/mage_1.11.0_FreeBSD-ARM.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.11.0/mage_1.11.0_Linux-64bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.11.0/mage_1.11.0_Linux-ARM.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.11.0/mage_1.11.0_Linux-ARM64.tar.gz",
-      "https://github.com/magefile/mage/releases/download/v1.11.0/mage_1.11.0_macOS-64bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.11.0/mage_1.11.0_NetBSD-64bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.11.0/mage_1.11.0_NetBSD-ARM.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.11.0/mage_1.11.0_OpenBSD-64bit.tar.gz",
-      "https://github.com/magefile/mage/releases/download/v1.11.0/mage_1.11.0_Windows-64bit.zip"
+      "https://github.com/magefile/mage/releases/download/v1.11.0/mage_1.11.0_Windows-64bit.zip",
+      "https://github.com/magefile/mage/releases/download/v1.11.0/mage_1.11.0_checksums.txt",
+      "https://github.com/magefile/mage/releases/download/v1.11.0/mage_1.11.0_macOS-64bit.tar.gz"
     ]
   },
   "v1.10.0": {
@@ -143,7 +143,6 @@
     "tag_name": "v1.10.0",
     "html_url": "https://github.com/magefile/mage/releases/tag/v1.10.0",
     "assets": [
-      "https://github.com/magefile/mage/releases/download/v1.10.0/mage_1.10.0_checksums.txt",
       "https://github.com/magefile/mage/releases/download/v1.10.0/mage_1.10.0_DragonFlyBSD-64bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.10.0/mage_1.10.0_FreeBSD-32bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.10.0/mage_1.10.0_FreeBSD-64bit.tar.gz",
@@ -152,15 +151,16 @@
       "https://github.com/magefile/mage/releases/download/v1.10.0/mage_1.10.0_Linux-64bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.10.0/mage_1.10.0_Linux-ARM.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.10.0/mage_1.10.0_Linux-ARM64.tar.gz",
-      "https://github.com/magefile/mage/releases/download/v1.10.0/mage_1.10.0_macOS-32bit.tar.gz",
-      "https://github.com/magefile/mage/releases/download/v1.10.0/mage_1.10.0_macOS-64bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.10.0/mage_1.10.0_NetBSD-32bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.10.0/mage_1.10.0_NetBSD-64bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.10.0/mage_1.10.0_NetBSD-ARM.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.10.0/mage_1.10.0_OpenBSD-32bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.10.0/mage_1.10.0_OpenBSD-64bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.10.0/mage_1.10.0_Windows-32bit.zip",
-      "https://github.com/magefile/mage/releases/download/v1.10.0/mage_1.10.0_Windows-64bit.zip"
+      "https://github.com/magefile/mage/releases/download/v1.10.0/mage_1.10.0_Windows-64bit.zip",
+      "https://github.com/magefile/mage/releases/download/v1.10.0/mage_1.10.0_checksums.txt",
+      "https://github.com/magefile/mage/releases/download/v1.10.0/mage_1.10.0_macOS-32bit.tar.gz",
+      "https://github.com/magefile/mage/releases/download/v1.10.0/mage_1.10.0_macOS-64bit.tar.gz"
     ]
   },
   "v1.9.0": {
@@ -168,7 +168,6 @@
     "tag_name": "v1.9.0",
     "html_url": "https://github.com/magefile/mage/releases/tag/v1.9.0",
     "assets": [
-      "https://github.com/magefile/mage/releases/download/v1.9.0/mage_1.9.0_checksums.txt",
       "https://github.com/magefile/mage/releases/download/v1.9.0/mage_1.9.0_DragonFlyBSD-64bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.9.0/mage_1.9.0_FreeBSD-32bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.9.0/mage_1.9.0_FreeBSD-64bit.tar.gz",
@@ -177,15 +176,16 @@
       "https://github.com/magefile/mage/releases/download/v1.9.0/mage_1.9.0_Linux-64bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.9.0/mage_1.9.0_Linux-ARM.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.9.0/mage_1.9.0_Linux-ARM64.tar.gz",
-      "https://github.com/magefile/mage/releases/download/v1.9.0/mage_1.9.0_macOS-32bit.tar.gz",
-      "https://github.com/magefile/mage/releases/download/v1.9.0/mage_1.9.0_macOS-64bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.9.0/mage_1.9.0_NetBSD-32bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.9.0/mage_1.9.0_NetBSD-64bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.9.0/mage_1.9.0_NetBSD-ARM.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.9.0/mage_1.9.0_OpenBSD-32bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.9.0/mage_1.9.0_OpenBSD-64bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.9.0/mage_1.9.0_Windows-32bit.zip",
-      "https://github.com/magefile/mage/releases/download/v1.9.0/mage_1.9.0_Windows-64bit.zip"
+      "https://github.com/magefile/mage/releases/download/v1.9.0/mage_1.9.0_Windows-64bit.zip",
+      "https://github.com/magefile/mage/releases/download/v1.9.0/mage_1.9.0_checksums.txt",
+      "https://github.com/magefile/mage/releases/download/v1.9.0/mage_1.9.0_macOS-32bit.tar.gz",
+      "https://github.com/magefile/mage/releases/download/v1.9.0/mage_1.9.0_macOS-64bit.tar.gz"
     ]
   },
   "v1.8.0": {
@@ -193,7 +193,6 @@
     "tag_name": "v1.8.0",
     "html_url": "https://github.com/magefile/mage/releases/tag/v1.8.0",
     "assets": [
-      "https://github.com/magefile/mage/releases/download/v1.8.0/mage_1.8.0_checksums.txt",
       "https://github.com/magefile/mage/releases/download/v1.8.0/mage_1.8.0_DragonFlyBSD-64bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.8.0/mage_1.8.0_FreeBSD-32bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.8.0/mage_1.8.0_FreeBSD-64bit.tar.gz",
@@ -202,15 +201,16 @@
       "https://github.com/magefile/mage/releases/download/v1.8.0/mage_1.8.0_Linux-64bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.8.0/mage_1.8.0_Linux-ARM.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.8.0/mage_1.8.0_Linux-ARM64.tar.gz",
-      "https://github.com/magefile/mage/releases/download/v1.8.0/mage_1.8.0_macOS-32bit.tar.gz",
-      "https://github.com/magefile/mage/releases/download/v1.8.0/mage_1.8.0_macOS-64bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.8.0/mage_1.8.0_NetBSD-32bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.8.0/mage_1.8.0_NetBSD-64bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.8.0/mage_1.8.0_NetBSD-ARM.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.8.0/mage_1.8.0_OpenBSD-32bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.8.0/mage_1.8.0_OpenBSD-64bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.8.0/mage_1.8.0_Windows-32bit.zip",
-      "https://github.com/magefile/mage/releases/download/v1.8.0/mage_1.8.0_Windows-64bit.zip"
+      "https://github.com/magefile/mage/releases/download/v1.8.0/mage_1.8.0_Windows-64bit.zip",
+      "https://github.com/magefile/mage/releases/download/v1.8.0/mage_1.8.0_checksums.txt",
+      "https://github.com/magefile/mage/releases/download/v1.8.0/mage_1.8.0_macOS-32bit.tar.gz",
+      "https://github.com/magefile/mage/releases/download/v1.8.0/mage_1.8.0_macOS-64bit.tar.gz"
     ]
   },
   "v1.7.1": {
@@ -218,7 +218,6 @@
     "tag_name": "v1.7.1",
     "html_url": "https://github.com/magefile/mage/releases/tag/v1.7.1",
     "assets": [
-      "https://github.com/magefile/mage/releases/download/v1.7.1/mage_1.7.1_checksums.txt",
       "https://github.com/magefile/mage/releases/download/v1.7.1/mage_1.7.1_DragonFlyBSD-64bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.7.1/mage_1.7.1_FreeBSD-32bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.7.1/mage_1.7.1_FreeBSD-64bit.tar.gz",
@@ -227,15 +226,16 @@
       "https://github.com/magefile/mage/releases/download/v1.7.1/mage_1.7.1_Linux-64bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.7.1/mage_1.7.1_Linux-ARM.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.7.1/mage_1.7.1_Linux-ARM64.tar.gz",
-      "https://github.com/magefile/mage/releases/download/v1.7.1/mage_1.7.1_macOS-32bit.tar.gz",
-      "https://github.com/magefile/mage/releases/download/v1.7.1/mage_1.7.1_macOS-64bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.7.1/mage_1.7.1_NetBSD-32bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.7.1/mage_1.7.1_NetBSD-64bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.7.1/mage_1.7.1_NetBSD-ARM.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.7.1/mage_1.7.1_OpenBSD-32bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.7.1/mage_1.7.1_OpenBSD-64bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.7.1/mage_1.7.1_Windows-32bit.zip",
-      "https://github.com/magefile/mage/releases/download/v1.7.1/mage_1.7.1_Windows-64bit.zip"
+      "https://github.com/magefile/mage/releases/download/v1.7.1/mage_1.7.1_Windows-64bit.zip",
+      "https://github.com/magefile/mage/releases/download/v1.7.1/mage_1.7.1_checksums.txt",
+      "https://github.com/magefile/mage/releases/download/v1.7.1/mage_1.7.1_macOS-32bit.tar.gz",
+      "https://github.com/magefile/mage/releases/download/v1.7.1/mage_1.7.1_macOS-64bit.tar.gz"
     ]
   },
   "v1.7.0": {
@@ -243,7 +243,6 @@
     "tag_name": "v1.7.0",
     "html_url": "https://github.com/magefile/mage/releases/tag/v1.7.0",
     "assets": [
-      "https://github.com/magefile/mage/releases/download/v1.7.0/mage_1.7.0_checksums.txt",
       "https://github.com/magefile/mage/releases/download/v1.7.0/mage_1.7.0_DragonFlyBSD-64bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.7.0/mage_1.7.0_FreeBSD-32bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.7.0/mage_1.7.0_FreeBSD-64bit.tar.gz",
@@ -252,15 +251,16 @@
       "https://github.com/magefile/mage/releases/download/v1.7.0/mage_1.7.0_Linux-64bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.7.0/mage_1.7.0_Linux-ARM.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.7.0/mage_1.7.0_Linux-ARM64.tar.gz",
-      "https://github.com/magefile/mage/releases/download/v1.7.0/mage_1.7.0_macOS-32bit.tar.gz",
-      "https://github.com/magefile/mage/releases/download/v1.7.0/mage_1.7.0_macOS-64bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.7.0/mage_1.7.0_NetBSD-32bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.7.0/mage_1.7.0_NetBSD-64bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.7.0/mage_1.7.0_NetBSD-ARM.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.7.0/mage_1.7.0_OpenBSD-32bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.7.0/mage_1.7.0_OpenBSD-64bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.7.0/mage_1.7.0_Windows-32bit.zip",
-      "https://github.com/magefile/mage/releases/download/v1.7.0/mage_1.7.0_Windows-64bit.zip"
+      "https://github.com/magefile/mage/releases/download/v1.7.0/mage_1.7.0_Windows-64bit.zip",
+      "https://github.com/magefile/mage/releases/download/v1.7.0/mage_1.7.0_checksums.txt",
+      "https://github.com/magefile/mage/releases/download/v1.7.0/mage_1.7.0_macOS-32bit.tar.gz",
+      "https://github.com/magefile/mage/releases/download/v1.7.0/mage_1.7.0_macOS-64bit.tar.gz"
     ]
   },
   "v1.6.2": {
@@ -268,7 +268,6 @@
     "tag_name": "v1.6.2",
     "html_url": "https://github.com/magefile/mage/releases/tag/v1.6.2",
     "assets": [
-      "https://github.com/magefile/mage/releases/download/v1.6.2/mage_1.6.2_checksums.txt",
       "https://github.com/magefile/mage/releases/download/v1.6.2/mage_1.6.2_DragonFlyBSD-64bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.6.2/mage_1.6.2_FreeBSD-32bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.6.2/mage_1.6.2_FreeBSD-64bit.tar.gz",
@@ -277,15 +276,16 @@
       "https://github.com/magefile/mage/releases/download/v1.6.2/mage_1.6.2_Linux-64bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.6.2/mage_1.6.2_Linux-ARM.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.6.2/mage_1.6.2_Linux-ARM64.tar.gz",
-      "https://github.com/magefile/mage/releases/download/v1.6.2/mage_1.6.2_macOS-32bit.tar.gz",
-      "https://github.com/magefile/mage/releases/download/v1.6.2/mage_1.6.2_macOS-64bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.6.2/mage_1.6.2_NetBSD-32bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.6.2/mage_1.6.2_NetBSD-64bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.6.2/mage_1.6.2_NetBSD-ARM.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.6.2/mage_1.6.2_OpenBSD-32bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.6.2/mage_1.6.2_OpenBSD-64bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.6.2/mage_1.6.2_Windows-32bit.zip",
-      "https://github.com/magefile/mage/releases/download/v1.6.2/mage_1.6.2_Windows-64bit.zip"
+      "https://github.com/magefile/mage/releases/download/v1.6.2/mage_1.6.2_Windows-64bit.zip",
+      "https://github.com/magefile/mage/releases/download/v1.6.2/mage_1.6.2_checksums.txt",
+      "https://github.com/magefile/mage/releases/download/v1.6.2/mage_1.6.2_macOS-32bit.tar.gz",
+      "https://github.com/magefile/mage/releases/download/v1.6.2/mage_1.6.2_macOS-64bit.tar.gz"
     ]
   },
   "v1.6.1": {
@@ -293,7 +293,6 @@
     "tag_name": "v1.6.1",
     "html_url": "https://github.com/magefile/mage/releases/tag/v1.6.1",
     "assets": [
-      "https://github.com/magefile/mage/releases/download/v1.6.1/mage_1.6.1_checksums.txt",
       "https://github.com/magefile/mage/releases/download/v1.6.1/mage_1.6.1_DragonFlyBSD-64bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.6.1/mage_1.6.1_FreeBSD-32bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.6.1/mage_1.6.1_FreeBSD-64bit.tar.gz",
@@ -302,15 +301,16 @@
       "https://github.com/magefile/mage/releases/download/v1.6.1/mage_1.6.1_Linux-64bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.6.1/mage_1.6.1_Linux-ARM.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.6.1/mage_1.6.1_Linux-ARM64.tar.gz",
-      "https://github.com/magefile/mage/releases/download/v1.6.1/mage_1.6.1_macOS-32bit.tar.gz",
-      "https://github.com/magefile/mage/releases/download/v1.6.1/mage_1.6.1_macOS-64bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.6.1/mage_1.6.1_NetBSD-32bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.6.1/mage_1.6.1_NetBSD-64bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.6.1/mage_1.6.1_NetBSD-ARM.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.6.1/mage_1.6.1_OpenBSD-32bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.6.1/mage_1.6.1_OpenBSD-64bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.6.1/mage_1.6.1_Windows-32bit.zip",
-      "https://github.com/magefile/mage/releases/download/v1.6.1/mage_1.6.1_Windows-64bit.zip"
+      "https://github.com/magefile/mage/releases/download/v1.6.1/mage_1.6.1_Windows-64bit.zip",
+      "https://github.com/magefile/mage/releases/download/v1.6.1/mage_1.6.1_checksums.txt",
+      "https://github.com/magefile/mage/releases/download/v1.6.1/mage_1.6.1_macOS-32bit.tar.gz",
+      "https://github.com/magefile/mage/releases/download/v1.6.1/mage_1.6.1_macOS-64bit.tar.gz"
     ]
   },
   "v1.6.0": {
@@ -318,7 +318,6 @@
     "tag_name": "v1.6.0",
     "html_url": "https://github.com/magefile/mage/releases/tag/v1.6.0",
     "assets": [
-      "https://github.com/magefile/mage/releases/download/v1.6.0/mage_1.6.0_checksums.txt",
       "https://github.com/magefile/mage/releases/download/v1.6.0/mage_1.6.0_DragonFlyBSD-64bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.6.0/mage_1.6.0_FreeBSD-32bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.6.0/mage_1.6.0_FreeBSD-64bit.tar.gz",
@@ -327,15 +326,16 @@
       "https://github.com/magefile/mage/releases/download/v1.6.0/mage_1.6.0_Linux-64bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.6.0/mage_1.6.0_Linux-ARM.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.6.0/mage_1.6.0_Linux-ARM64.tar.gz",
-      "https://github.com/magefile/mage/releases/download/v1.6.0/mage_1.6.0_macOS-32bit.tar.gz",
-      "https://github.com/magefile/mage/releases/download/v1.6.0/mage_1.6.0_macOS-64bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.6.0/mage_1.6.0_NetBSD-32bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.6.0/mage_1.6.0_NetBSD-64bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.6.0/mage_1.6.0_NetBSD-ARM.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.6.0/mage_1.6.0_OpenBSD-32bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.6.0/mage_1.6.0_OpenBSD-64bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.6.0/mage_1.6.0_Windows-32bit.zip",
-      "https://github.com/magefile/mage/releases/download/v1.6.0/mage_1.6.0_Windows-64bit.zip"
+      "https://github.com/magefile/mage/releases/download/v1.6.0/mage_1.6.0_Windows-64bit.zip",
+      "https://github.com/magefile/mage/releases/download/v1.6.0/mage_1.6.0_checksums.txt",
+      "https://github.com/magefile/mage/releases/download/v1.6.0/mage_1.6.0_macOS-32bit.tar.gz",
+      "https://github.com/magefile/mage/releases/download/v1.6.0/mage_1.6.0_macOS-64bit.tar.gz"
     ]
   },
   "v1.5.0": {
@@ -343,7 +343,6 @@
     "tag_name": "v1.5.0",
     "html_url": "https://github.com/magefile/mage/releases/tag/v1.5.0",
     "assets": [
-      "https://github.com/magefile/mage/releases/download/v1.5.0/mage_1.5.0_checksums.txt",
       "https://github.com/magefile/mage/releases/download/v1.5.0/mage_1.5.0_DragonFlyBSD-64bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.5.0/mage_1.5.0_FreeBSD-32bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.5.0/mage_1.5.0_FreeBSD-64bit.tar.gz",
@@ -352,15 +351,16 @@
       "https://github.com/magefile/mage/releases/download/v1.5.0/mage_1.5.0_Linux-64bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.5.0/mage_1.5.0_Linux-ARM.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.5.0/mage_1.5.0_Linux-ARM64.tar.gz",
-      "https://github.com/magefile/mage/releases/download/v1.5.0/mage_1.5.0_macOS-32bit.tar.gz",
-      "https://github.com/magefile/mage/releases/download/v1.5.0/mage_1.5.0_macOS-64bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.5.0/mage_1.5.0_NetBSD-32bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.5.0/mage_1.5.0_NetBSD-64bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.5.0/mage_1.5.0_NetBSD-ARM.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.5.0/mage_1.5.0_OpenBSD-32bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.5.0/mage_1.5.0_OpenBSD-64bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.5.0/mage_1.5.0_Windows-32bit.zip",
-      "https://github.com/magefile/mage/releases/download/v1.5.0/mage_1.5.0_Windows-64bit.zip"
+      "https://github.com/magefile/mage/releases/download/v1.5.0/mage_1.5.0_Windows-64bit.zip",
+      "https://github.com/magefile/mage/releases/download/v1.5.0/mage_1.5.0_checksums.txt",
+      "https://github.com/magefile/mage/releases/download/v1.5.0/mage_1.5.0_macOS-32bit.tar.gz",
+      "https://github.com/magefile/mage/releases/download/v1.5.0/mage_1.5.0_macOS-64bit.tar.gz"
     ]
   },
   "v1.4.0": {
@@ -368,7 +368,6 @@
     "tag_name": "v1.4.0",
     "html_url": "https://github.com/magefile/mage/releases/tag/v1.4.0",
     "assets": [
-      "https://github.com/magefile/mage/releases/download/v1.4.0/mage_1.4.0_checksums.txt",
       "https://github.com/magefile/mage/releases/download/v1.4.0/mage_1.4.0_DragonFlyBSD-64bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.4.0/mage_1.4.0_FreeBSD-32bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.4.0/mage_1.4.0_FreeBSD-64bit.tar.gz",
@@ -377,15 +376,16 @@
       "https://github.com/magefile/mage/releases/download/v1.4.0/mage_1.4.0_Linux-64bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.4.0/mage_1.4.0_Linux-ARM.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.4.0/mage_1.4.0_Linux-ARM64.tar.gz",
-      "https://github.com/magefile/mage/releases/download/v1.4.0/mage_1.4.0_macOS-32bit.tar.gz",
-      "https://github.com/magefile/mage/releases/download/v1.4.0/mage_1.4.0_macOS-64bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.4.0/mage_1.4.0_NetBSD-32bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.4.0/mage_1.4.0_NetBSD-64bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.4.0/mage_1.4.0_NetBSD-ARM.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.4.0/mage_1.4.0_OpenBSD-32bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.4.0/mage_1.4.0_OpenBSD-64bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.4.0/mage_1.4.0_Windows-32bit.zip",
-      "https://github.com/magefile/mage/releases/download/v1.4.0/mage_1.4.0_Windows-64bit.zip"
+      "https://github.com/magefile/mage/releases/download/v1.4.0/mage_1.4.0_Windows-64bit.zip",
+      "https://github.com/magefile/mage/releases/download/v1.4.0/mage_1.4.0_checksums.txt",
+      "https://github.com/magefile/mage/releases/download/v1.4.0/mage_1.4.0_macOS-32bit.tar.gz",
+      "https://github.com/magefile/mage/releases/download/v1.4.0/mage_1.4.0_macOS-64bit.tar.gz"
     ]
   },
   "v1.3.0": {
@@ -393,7 +393,6 @@
     "tag_name": "v1.3.0",
     "html_url": "https://github.com/magefile/mage/releases/tag/v1.3.0",
     "assets": [
-      "https://github.com/magefile/mage/releases/download/v1.3.0/mage_1.3.0_checksums.txt",
       "https://github.com/magefile/mage/releases/download/v1.3.0/mage_1.3.0_DragonFlyBSD-64bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.3.0/mage_1.3.0_FreeBSD-32bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.3.0/mage_1.3.0_FreeBSD-64bit.tar.gz",
@@ -402,15 +401,16 @@
       "https://github.com/magefile/mage/releases/download/v1.3.0/mage_1.3.0_Linux-64bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.3.0/mage_1.3.0_Linux-ARM.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.3.0/mage_1.3.0_Linux-ARM64.tar.gz",
-      "https://github.com/magefile/mage/releases/download/v1.3.0/mage_1.3.0_macOS-32bit.tar.gz",
-      "https://github.com/magefile/mage/releases/download/v1.3.0/mage_1.3.0_macOS-64bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.3.0/mage_1.3.0_NetBSD-32bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.3.0/mage_1.3.0_NetBSD-64bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.3.0/mage_1.3.0_NetBSD-ARM.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.3.0/mage_1.3.0_OpenBSD-32bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.3.0/mage_1.3.0_OpenBSD-64bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.3.0/mage_1.3.0_Windows-32bit.zip",
-      "https://github.com/magefile/mage/releases/download/v1.3.0/mage_1.3.0_Windows-64bit.zip"
+      "https://github.com/magefile/mage/releases/download/v1.3.0/mage_1.3.0_Windows-64bit.zip",
+      "https://github.com/magefile/mage/releases/download/v1.3.0/mage_1.3.0_checksums.txt",
+      "https://github.com/magefile/mage/releases/download/v1.3.0/mage_1.3.0_macOS-32bit.tar.gz",
+      "https://github.com/magefile/mage/releases/download/v1.3.0/mage_1.3.0_macOS-64bit.tar.gz"
     ]
   },
   "v1.2.4": {
@@ -418,7 +418,6 @@
     "tag_name": "v1.2.4",
     "html_url": "https://github.com/magefile/mage/releases/tag/v1.2.4",
     "assets": [
-      "https://github.com/magefile/mage/releases/download/v1.2.4/mage_1.2.4_checksums.txt",
       "https://github.com/magefile/mage/releases/download/v1.2.4/mage_1.2.4_DragonFlyBSD-64bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.2.4/mage_1.2.4_FreeBSD-32bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.2.4/mage_1.2.4_FreeBSD-64bit.tar.gz",
@@ -427,15 +426,16 @@
       "https://github.com/magefile/mage/releases/download/v1.2.4/mage_1.2.4_Linux-64bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.2.4/mage_1.2.4_Linux-ARM.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.2.4/mage_1.2.4_Linux-ARM64.tar.gz",
-      "https://github.com/magefile/mage/releases/download/v1.2.4/mage_1.2.4_macOS-32bit.tar.gz",
-      "https://github.com/magefile/mage/releases/download/v1.2.4/mage_1.2.4_macOS-64bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.2.4/mage_1.2.4_NetBSD-32bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.2.4/mage_1.2.4_NetBSD-64bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.2.4/mage_1.2.4_NetBSD-ARM.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.2.4/mage_1.2.4_OpenBSD-32bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.2.4/mage_1.2.4_OpenBSD-64bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.2.4/mage_1.2.4_Windows-32bit.zip",
-      "https://github.com/magefile/mage/releases/download/v1.2.4/mage_1.2.4_Windows-64bit.zip"
+      "https://github.com/magefile/mage/releases/download/v1.2.4/mage_1.2.4_Windows-64bit.zip",
+      "https://github.com/magefile/mage/releases/download/v1.2.4/mage_1.2.4_checksums.txt",
+      "https://github.com/magefile/mage/releases/download/v1.2.4/mage_1.2.4_macOS-32bit.tar.gz",
+      "https://github.com/magefile/mage/releases/download/v1.2.4/mage_1.2.4_macOS-64bit.tar.gz"
     ]
   },
   "v1.0.2": {
@@ -443,7 +443,6 @@
     "tag_name": "v1.0.2",
     "html_url": "https://github.com/magefile/mage/releases/tag/v1.0.2",
     "assets": [
-      "https://github.com/magefile/mage/releases/download/v1.0.2/mage_1.0.2_checksums.txt",
       "https://github.com/magefile/mage/releases/download/v1.0.2/mage_1.0.2_DragonFlyBSD-64bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.0.2/mage_1.0.2_FreeBSD-32bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.0.2/mage_1.0.2_FreeBSD-64bit.tar.gz",
@@ -452,15 +451,16 @@
       "https://github.com/magefile/mage/releases/download/v1.0.2/mage_1.0.2_Linux-64bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.0.2/mage_1.0.2_Linux-ARM.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.0.2/mage_1.0.2_Linux-ARM64.tar.gz",
-      "https://github.com/magefile/mage/releases/download/v1.0.2/mage_1.0.2_macOS-32bit.tar.gz",
-      "https://github.com/magefile/mage/releases/download/v1.0.2/mage_1.0.2_macOS-64bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.0.2/mage_1.0.2_NetBSD-32bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.0.2/mage_1.0.2_NetBSD-64bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.0.2/mage_1.0.2_NetBSD-ARM.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.0.2/mage_1.0.2_OpenBSD-32bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.0.2/mage_1.0.2_OpenBSD-64bit.tar.gz",
       "https://github.com/magefile/mage/releases/download/v1.0.2/mage_1.0.2_Windows-32bit.zip",
-      "https://github.com/magefile/mage/releases/download/v1.0.2/mage_1.0.2_Windows-64bit.zip"
+      "https://github.com/magefile/mage/releases/download/v1.0.2/mage_1.0.2_Windows-64bit.zip",
+      "https://github.com/magefile/mage/releases/download/v1.0.2/mage_1.0.2_checksums.txt",
+      "https://github.com/magefile/mage/releases/download/v1.0.2/mage_1.0.2_macOS-32bit.tar.gz",
+      "https://github.com/magefile/mage/releases/download/v1.0.2/mage_1.0.2_macOS-64bit.tar.gz"
     ]
   },
   "v1.0.1": {
