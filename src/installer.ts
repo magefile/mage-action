@@ -4,6 +4,7 @@ import * as util from 'util';
 import * as core from '@actions/core';
 import * as httpm from '@actions/http-client';
 import * as tc from '@actions/tool-cache';
+import * as cache from '@actions/cache';
 
 const osPlat: string = os.platform();
 const osArch: string = os.arch();
@@ -37,6 +38,22 @@ export async function getMage(version: string): Promise<string> {
   core.info(`Mage version found: ${release.tag_name}`);
 
   const filename: string = getFilename(semver);
+  const magePath = tc.find('mage-action', semver);
+  if (magePath) {
+    core.info(`Mage binary found in local cache @ ${magePath}`);
+    return getExePath(magePath);
+  }
+
+  if (cache.isFeatureAvailable()) {
+    core.debug(`GitHub actions cache feature available`);
+    const cacheKey = await cache.restoreCache([getExePath(mageLocalPath())], getCacheKey(semver));
+    if (cacheKey) {
+      core.info(`Restored ${cacheKey} from GitHub actions cache`);
+      const cachePath: string = await tc.cacheDir(mageLocalPath(), 'mage-action', semver);
+      return getExePath(cachePath);
+    }
+  }
+
   const downloadUrl: string = util.format(
     'https://github.com/magefile/mage/releases/download/%s/%s',
     release.tag_name,
@@ -50,20 +67,36 @@ export async function getMage(version: string): Promise<string> {
   core.info('Extracting Mage...');
   let extPath: string;
   if (osPlat == 'win32') {
-    extPath = await tc.extractZip(downloadPath);
+    extPath = await tc.extractZip(downloadPath, mageLocalPath());
   } else {
-    extPath = await tc.extractTar(downloadPath);
+    extPath = await tc.extractTar(downloadPath, mageLocalPath());
   }
   core.debug(`Extracted to ${extPath}`);
 
   const cachePath: string = await tc.cacheDir(extPath, 'mage-action', semver);
   core.debug(`Cached to ${cachePath}`);
+  if (cache.isFeatureAvailable()) {
+    core.debug(`Caching to GitHub actions cache`);
+    await cache.saveCache([getExePath(mageLocalPath())], getCacheKey(semver));
+  }
 
-  const exePath: string = path.join(cachePath, osPlat == 'win32' ? 'mage.exe' : 'mage');
+  return getExePath(cachePath);
+}
+
+const getCacheKey = (semver: string): string => {
+  return util.format('mage-action-cache-%s', semver);
+};
+
+const mageLocalPath = (): string => {
+  return path.join(`${process.env.HOME}`, '.mage');
+};
+
+const getExePath = (basePath: string): string => {
+  const exePath: string = path.join(basePath, osPlat == 'win32' ? 'mage.exe' : 'mage');
   core.debug(`Exe path is ${exePath}`);
 
   return exePath;
-}
+};
 
 const getFilename = (semver: string): string => {
   const platform: string = osPlat == 'win32' ? 'Windows' : osPlat == 'darwin' ? 'macOS' : 'Linux';
