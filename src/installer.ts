@@ -41,6 +41,7 @@ export async function getMage(version: string): Promise<string> {
   const magePath = tc.find('mage-action', semver);
   if (magePath) {
     core.info(`Mage binary found in local cache @ ${magePath}`);
+    core.addPath(magePath);
     return getExePath(magePath);
   }
 
@@ -50,6 +51,7 @@ export async function getMage(version: string): Promise<string> {
     if (cacheKey) {
       core.info(`Restored ${cacheKey} from GitHub actions cache`);
       const cachePath: string = await tc.cacheDir(mageLocalPath(), 'mage-action', semver);
+      core.addPath(cachePath);
       return getExePath(cachePath);
     }
   }
@@ -80,6 +82,7 @@ export async function getMage(version: string): Promise<string> {
     await cache.saveCache([getExePath(mageLocalPath())], getCacheKey(semver));
   }
 
+  core.addPath(cachePath);
   return getExePath(cachePath);
 }
 
