@@ -21,7 +21,7 @@ jobs:
       matrix:
         os:
           - ubuntu-latest
-          - macOS-latest
+          - macos-latest
           - windows-latest
         version:
           - latest
@@ -40,3 +40,29 @@ jobs:
           version: ${{ matrix.version }}
           args: build
           workdir: test
+
+  install-only:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os:
+          - ubuntu-latest
+          - macos-latest
+          - windows-latest
+        version:
+          - latest
+          - v1.8.0
+    steps:
+      -
+        name: Checkout
+        uses: actions/checkout@v3
+      -
+        name: Install Mage
+        uses: ./
+        with:
+          version: ${{ matrix.version }}
+          install-only: true
+      -
+        name: Show Mage version
+        run: mage --version

@@ -17,6 +17,10 @@ inputs:
   workdir:
     description: 'Working directory (below repository root)'
     required: false
+  install-only:
+    description: 'Just install Mage'
+    default: 'false'
+    required: false
 
 runs:
   using: 'node16'
