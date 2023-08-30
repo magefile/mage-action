@@ -22,6 +22,8 @@ ___
 
 ## Usage
 
+### Quick start
+
 ```yaml
 name: mage
 
@@ -38,9 +40,9 @@ jobs:
         uses: actions/checkout@v3
       -
         name: Set up Go
-        uses: actions/setup-go@v3
+        uses: actions/setup-go@v4
         with:
-          go-version: 1.14
+          go-version: 1.21
       -
         name: Run Mage
         uses: magefile/mage-action@v2
@@ -51,17 +53,49 @@ jobs:
 
 > For detailed instructions please follow GitHub Actions [workflow syntax](https://help.github.com/en/articles/workflow-syntax-for-github-actions#About-yaml-syntax-for-workflows).
 
+### Install Only
+
+```yaml
+name: mage
+
+on:
+  pull_request:
+  push:
+
+jobs:
+  mage:
+    runs-on: ubuntu-latest
+    steps:
+      -
+        name: Checkout
+        uses: actions/checkout@v3
+      -
+        name: Set up Go
+        uses: actions/setup-go@v4
+        with:
+          go-version: 1.21
+      -
+        name: Run Mage
+        uses: magefile/mage-action@v2
+        with:
+          install-only: true
+      -
+        name: Show Mage version
+        run: mage --version
+```
+
 ## Customizing
 
 ### inputs
 
 Following inputs can be used as `step.with` keys
 
-| Name      | Type   | Default  | Description                               |
-|-----------|--------|----------|-------------------------------------------|
-| `version` | String | `latest` | Mage version. Example: `v1.9.0`           |
-| `args`    | String |          | Arguments to pass to Mage                 |
-| `workdir` | String | `.`      | Working directory (below repository root) |
+| Name           | Type   | Default  | Description                               |
+|----------------|--------|----------|-------------------------------------------|
+| `version`      | String | `latest` | Mage version. Example: `v1.9.0`           |
+| `args`         | String |          | Arguments to pass to Mage                 |
+| `workdir`      | String | `.`      | Working directory (below repository root) |
+| `install-only` | Bool   | `false`  | Just install Mage                         |
 
 ## License
 
