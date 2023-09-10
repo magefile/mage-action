@@ -5,8 +5,8 @@ updates:
     schedule:
       interval: "daily"
     labels:
-      - ":game_die: dependencies"
-      - ":robot: bot"
+      - "kind/dependencies"
+      - "bot"
   - package-ecosystem: "npm"
     directory: "/"
     schedule:
@@ -15,5 +15,5 @@ updates:
     allow:
       - dependency-type: "production"
     labels:
-      - ":game_die: dependencies"
-      - ":robot: bot"
+      - "kind/dependencies"
+      - "bot"
