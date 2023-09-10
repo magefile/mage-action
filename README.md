@@ -45,7 +45,7 @@ jobs:
           go-version: 1.21
       -
         name: Run Mage
-        uses: magefile/mage-action@v2
+        uses: magefile/mage-action@v3
         with:
           version: latest
           args: build
@@ -76,7 +76,7 @@ jobs:
           go-version: 1.21
       -
         name: Run Mage
-        uses: magefile/mage-action@v2
+        uses: magefile/mage-action@v3
         with:
           install-only: true
       -
