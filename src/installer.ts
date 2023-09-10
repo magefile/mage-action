@@ -5,6 +5,7 @@ import * as core from '@actions/core';
 import * as httpm from '@actions/http-client';
 import * as tc from '@actions/tool-cache';
 import * as cache from '@actions/cache';
+import fs from 'fs';
 
 const osPlat: string = os.platform();
 const osArch: string = os.arch();
@@ -44,12 +45,17 @@ export async function getMage(version: string): Promise<string> {
     return getExePath(magePath);
   }
 
+  const mageHome = path.join(`${process.env.HOME}`, '.mage');
+  if (!fs.existsSync(mageHome)) {
+    fs.mkdirSync(mageHome, {recursive: true});
+  }
+
   if (cache.isFeatureAvailable()) {
     core.debug(`GitHub actions cache feature available`);
-    const cacheKey = await cache.restoreCache([getExePath(mageLocalPath())], getCacheKey(semver));
+    const cacheKey = await cache.restoreCache([getExePath(mageHome)], getCacheKey(semver));
     if (cacheKey) {
       core.info(`Restored ${cacheKey} from GitHub actions cache`);
-      const cachePath: string = await tc.cacheDir(mageLocalPath(), 'mage-action', semver);
+      const cachePath: string = await tc.cacheDir(mageHome, 'mage-action', semver);
       return getExePath(cachePath);
     }
   }
@@ -67,9 +73,9 @@ export async function getMage(version: string): Promise<string> {
   core.info('Extracting Mage...');
   let extPath: string;
   if (osPlat == 'win32') {
-    extPath = await tc.extractZip(downloadPath, mageLocalPath());
+    extPath = await tc.extractZip(downloadPath, mageHome);
   } else {
-    extPath = await tc.extractTar(downloadPath, mageLocalPath());
+    extPath = await tc.extractTar(downloadPath, mageHome);
   }
   core.debug(`Extracted to ${extPath}`);
 
@@ -77,7 +83,7 @@ export async function getMage(version: string): Promise<string> {
   core.debug(`Cached to ${cachePath}`);
   if (cache.isFeatureAvailable()) {
     core.debug(`Caching to GitHub actions cache`);
-    await cache.saveCache([getExePath(mageLocalPath())], getCacheKey(semver));
+    await cache.saveCache([getExePath(mageHome)], getCacheKey(semver));
   }
 
   return getExePath(cachePath);
@@ -85,10 +91,6 @@ export async function getMage(version: string): Promise<string> {
 
 const getCacheKey = (semver: string): string => {
   return util.format('mage-action-cache-%s', semver);
-};
-
-const mageLocalPath = (): string => {
-  return path.join(`${process.env.HOME}`, '.mage');
 };
 
 const getExePath = (basePath: string): string => {
