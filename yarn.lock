@@ -12,9 +12,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@actions/cache@npm:^3.2.2":
-  version: 3.2.2
-  resolution: "@actions/cache@npm:3.2.2"
+"@actions/cache@npm:^3.2.4":
+  version: 3.2.4
+  resolution: "@actions/cache@npm:3.2.4"
   dependencies:
     "@actions/core": ^1.10.0
     "@actions/exec": ^1.0.1
@@ -24,9 +24,9 @@ __metadata:
     "@azure/abort-controller": ^1.1.0
     "@azure/ms-rest-js": ^2.6.0
     "@azure/storage-blob": ^12.13.0
-    semver: ^6.1.0
+    semver: ^6.3.1
     uuid: ^3.3.3
-  checksum: 1dc43a66596b98a7d4ad9f3a3e92b24186e28a42486fac311c7f99c2883d0387a6078d76b31c5ca3af30bb2b929c6f8e5f352e315bcce4fb9cae5d5f2f1f5fad
+  checksum: 5bf5f7541bea4906b553440a9ffee5699e11dfb729365c6cb0bbd37e147a1a0993369fdad16bfa3e2b01ec7fa57dac66276278bfd4a389009246a75ea953e61d
   languageName: node
   linkType: hard
 
@@ -4424,7 +4424,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "mage-action@workspace:."
   dependencies:
-    "@actions/cache": ^3.2.2
+    "@actions/cache": ^3.2.4
     "@actions/core": ^1.11.1
     "@actions/exec": ^1.1.1
     "@actions/http-client": ^2.2.3
@@ -5245,7 +5245,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"semver@npm:^6.0.0, semver@npm:^6.1.0, semver@npm:^6.3.0":
+"semver@npm:^6.0.0, semver@npm:^6.1.0, semver@npm:^6.3.0, semver@npm:^6.3.1":
   version: 6.3.1
   resolution: "semver@npm:6.3.1"
   bin:
