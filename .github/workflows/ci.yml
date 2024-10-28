@@ -55,7 +55,10 @@ jobs:
       matrix:
         os:
           - ubuntu-latest
-          - macos-latest
+          - macos-15
+          - macos-14
+          - macos-13
+          - macos-12
           - windows-latest
         version:
           - latest
