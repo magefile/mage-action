@@ -40,9 +40,7 @@ jobs:
         uses: actions/checkout@v4
       -
         name: Set up Go
-        uses: actions/setup-go@v4
-        with:
-          go-version: 1.21
+        uses: actions/setup-go@v5
       -
         name: Run Mage
         uses: magefile/mage-action@v3
@@ -50,8 +48,6 @@ jobs:
           version: latest
           args: build
 ```
-
-> For detailed instructions please follow GitHub Actions [workflow syntax](https://help.github.com/en/articles/workflow-syntax-for-github-actions#About-yaml-syntax-for-workflows).
 
 ### Install Only
 
@@ -71,9 +67,7 @@ jobs:
         uses: actions/checkout@v4
       -
         name: Set up Go
-        uses: actions/setup-go@v4
-        with:
-          go-version: 1.21
+        uses: actions/setup-go@v5
       -
         name: Run Mage
         uses: magefile/mage-action@v3
@@ -88,7 +82,7 @@ jobs:
 
 ### inputs
 
-Following inputs can be used as `step.with` keys
+The following inputs can be used as `step.with` keys:
 
 | Name           | Type   | Default  | Description                               |
 |----------------|--------|----------|-------------------------------------------|
