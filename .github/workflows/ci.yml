@@ -4,6 +4,10 @@ concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
 
+# https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#permissions
+permissions:
+  contents: read
+
 on:
   schedule:
     - cron: '0 10 * * *'
@@ -58,7 +62,6 @@ jobs:
           - macos-15
           - macos-14
           - macos-13
-          - macos-12
           - windows-latest
         version:
           - latest
