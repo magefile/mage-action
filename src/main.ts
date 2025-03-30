@@ -9,8 +9,9 @@ async function run(): Promise<void> {
     const args = core.getInput('args');
     const workdir = core.getInput('workdir') || process.env['GITHUB_WORKSPACE'] || '.';
     const installOnly = core.getBooleanInput('install-only');
+    const cacheBinary = core.getBooleanInput('cache-binary');
 
-    const mage = await installer.getMage(version);
+    const mage = await installer.getMage(version, cacheBinary);
 
     if (installOnly) {
       const dir = path.dirname(mage);
