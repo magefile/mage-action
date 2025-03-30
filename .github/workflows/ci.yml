@@ -29,7 +29,10 @@ jobs:
       matrix:
         os:
           - ubuntu-latest
-          - macos-latest
+          # TODO: uncomment when arm64 binaries are available: https://github.com/magefile/mage/issues/481
+          # - macos-15
+          # - macos-14
+          - macos-13
           - windows-latest
         version:
           - latest
@@ -59,8 +62,9 @@ jobs:
       matrix:
         os:
           - ubuntu-latest
-          - macos-15
-          - macos-14
+          # TODO: uncomment when arm64 binaries are available: https://github.com/magefile/mage/issues/481
+          # - macos-15
+          # - macos-14
           - macos-13
           - windows-latest
         version:
