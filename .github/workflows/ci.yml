@@ -54,6 +54,7 @@ jobs:
           version: ${{ matrix.version }}
           args: build
           workdir: test
+          cache-binary: false
 
   install-only:
     runs-on: ${{ matrix.os }}
@@ -80,6 +81,24 @@ jobs:
         with:
           version: ${{ matrix.version }}
           install-only: true
+          cache-binary: false
+      -
+        name: Show Mage version
+        run: mage --version
+
+  cache-binary:
+    runs-on: ubuntu-latest
+    steps:
+      -
+        name: Checkout
+        uses: actions/checkout@v4
+      -
+        name: Install Mage
+        uses: ./
+        with:
+          version: v1.14.0
+          install-only: true
+          cache-binary: true
       -
         name: Show Mage version
         run: mage --version

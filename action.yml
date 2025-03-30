@@ -21,6 +21,10 @@ inputs:
     description: 'Just install Mage'
     default: 'false'
     required: false
+  cache-binary:
+    description: 'Cache binary to GitHub Actions cache backend'
+    default: 'true'
+    required: false
 
 runs:
   using: 'node20'

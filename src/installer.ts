@@ -33,7 +33,7 @@ export const getRelease = async (version: string): Promise<GitHubRelease> => {
   return releases[version];
 };
 
-export async function getMage(version: string): Promise<string> {
+export async function getMage(version: string, cacheBinary?: boolean): Promise<string> {
   const release: GitHubRelease = await getRelease(version);
   const semver: string = release.tag_name.replace(/^v/, '');
   core.info(`Mage version found: ${release.tag_name}`);
@@ -50,7 +50,7 @@ export async function getMage(version: string): Promise<string> {
     fs.mkdirSync(mageHome, {recursive: true});
   }
 
-  if (cache.isFeatureAvailable()) {
+  if (cacheBinary && cache.isFeatureAvailable()) {
     core.debug(`GitHub actions cache feature available`);
     const cacheKey = await cache.restoreCache([getExePath(mageHome)], getCacheKey(semver));
     if (cacheKey) {
@@ -81,7 +81,7 @@ export async function getMage(version: string): Promise<string> {
 
   const cachePath: string = await tc.cacheDir(extPath, 'mage-action', semver);
   core.debug(`Cached to ${cachePath}`);
-  if (cache.isFeatureAvailable()) {
+  if (cacheBinary && cache.isFeatureAvailable()) {
     core.debug(`Caching to GitHub actions cache`);
     await cache.saveCache([getExePath(mageHome)], getCacheKey(semver));
   }

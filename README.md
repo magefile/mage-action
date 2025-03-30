@@ -84,12 +84,13 @@ jobs:
 
 The following inputs can be used as `step.with` keys:
 
-| Name           | Type   | Default  | Description                               |
-|----------------|--------|----------|-------------------------------------------|
-| `version`      | String | `latest` | Mage version. Example: `v1.9.0`           |
-| `args`         | String |          | Arguments to pass to Mage                 |
-| `workdir`      | String | `.`      | Working directory (below repository root) |
-| `install-only` | Bool   | `false`  | Just install Mage                         |
+| Name           | Type   | Default  | Description                                  |
+|----------------|--------|----------|----------------------------------------------|
+| `version`      | String | `latest` | Mage version. Example: `v1.9.0`              |
+| `args`         | String |          | Arguments to pass to Mage                    |
+| `workdir`      | String | `.`      | Working directory (below repository root)    |
+| `install-only` | Bool   | `false`  | Just install Mage                            |
+| `cache-binary` | Bool   | `true`   | Cache binary to GitHub Actions cache backend |
 
 ## License
 
