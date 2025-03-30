@@ -12,11 +12,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@actions/cache@npm:^3.2.4":
-  version: 3.2.4
-  resolution: "@actions/cache@npm:3.2.4"
+"@actions/cache@npm:^4.0.3":
+  version: 4.0.3
+  resolution: "@actions/cache@npm:4.0.3"
   dependencies:
-    "@actions/core": ^1.10.0
+    "@actions/core": ^1.11.1
     "@actions/exec": ^1.0.1
     "@actions/glob": ^0.1.0
     "@actions/http-client": ^2.1.1
@@ -24,19 +24,9 @@ __metadata:
     "@azure/abort-controller": ^1.1.0
     "@azure/ms-rest-js": ^2.6.0
     "@azure/storage-blob": ^12.13.0
+    "@protobuf-ts/plugin": ^2.9.4
     semver: ^6.3.1
-    uuid: ^3.3.3
-  checksum: 5bf5f7541bea4906b553440a9ffee5699e11dfb729365c6cb0bbd37e147a1a0993369fdad16bfa3e2b01ec7fa57dac66276278bfd4a389009246a75ea953e61d
-  languageName: node
-  linkType: hard
-
-"@actions/core@npm:^1.10.0, @actions/core@npm:^1.2.6":
-  version: 1.10.0
-  resolution: "@actions/core@npm:1.10.0"
-  dependencies:
-    "@actions/http-client": ^2.0.1
-    uuid: ^8.3.2
-  checksum: 0a75621e007ab20d887434cdd165f0b9036f14c22252a2faed33543d8b9d04ec95d823e69ca636a25245574e4585d73e1e9e47a845339553c664f9f2c9614669
+  checksum: ee9c2a21a70bd3f35c63f302af478e23f135c26deb77ea2e4eed29c62766a4b201fc7435651c0d56fa504c02d203107e3bdfda1dba18a3ee09338e1dfc3f2fe8
   languageName: node
   linkType: hard
 
@@ -47,6 +37,16 @@ __metadata:
     "@actions/exec": ^1.1.1
     "@actions/http-client": ^2.0.1
   checksum: 9ac7a3e0b478bfefd862dcb4ddaa1d8c3f9076bb1931d3d280918d1749e7783480c6a009c1b009c8bf5093e2d77d9f4e023d70416145bf246f0071736d4ef839
+  languageName: node
+  linkType: hard
+
+"@actions/core@npm:^1.2.6":
+  version: 1.10.0
+  resolution: "@actions/core@npm:1.10.0"
+  dependencies:
+    "@actions/http-client": ^2.0.1
+    uuid: ^8.3.2
+  checksum: 0a75621e007ab20d887434cdd165f0b9036f14c22252a2faed33543d8b9d04ec95d823e69ca636a25245574e4585d73e1e9e47a845339553c664f9f2c9614669
   languageName: node
   linkType: hard
 
@@ -1529,6 +1529,57 @@ __metadata:
     picocolors: ^1.0.0
     tslib: ^2.6.0
   checksum: 24e04c121269317d259614cd32beea3af38277151c4002df5883c4be920b8e3490bb897748e844f9d46bf68230f86dabd4e8f093773130e7e60529a769a132fc
+  languageName: node
+  linkType: hard
+
+"@protobuf-ts/plugin-framework@npm:^2.9.6":
+  version: 2.9.6
+  resolution: "@protobuf-ts/plugin-framework@npm:2.9.6"
+  dependencies:
+    "@protobuf-ts/runtime": ^2.9.6
+    typescript: ^3.9
+  checksum: b52e35f6193a93b8633bc265594fc053e36b60ecde0bc79aff80ebf30f7a5549017e74f9cf76e6935ce5c8507798255035f602cbd93b2e3989aec78e01bdebdc
+  languageName: node
+  linkType: hard
+
+"@protobuf-ts/plugin@npm:^2.9.4":
+  version: 2.9.6
+  resolution: "@protobuf-ts/plugin@npm:2.9.6"
+  dependencies:
+    "@protobuf-ts/plugin-framework": ^2.9.6
+    "@protobuf-ts/protoc": ^2.9.6
+    "@protobuf-ts/runtime": ^2.9.6
+    "@protobuf-ts/runtime-rpc": ^2.9.6
+    typescript: ^3.9
+  bin:
+    protoc-gen-dump: bin/protoc-gen-dump
+    protoc-gen-ts: bin/protoc-gen-ts
+  checksum: 88c3d7e0c9dc475fecf8ad734a8c08dcad29f570153835bc7d86bfcc72817e8d7098ec79211e4c3b52cbb77eebc0efaf53845269ef4226886643e418b1e3b23b
+  languageName: node
+  linkType: hard
+
+"@protobuf-ts/protoc@npm:^2.9.6":
+  version: 2.9.6
+  resolution: "@protobuf-ts/protoc@npm:2.9.6"
+  bin:
+    protoc: protoc.js
+  checksum: 447ed1f1553de0c219e508c71aa4e1ed8ae39a1fa18ff620d322ce201985880052a2fd727e44c59e2c26cd439ef7d0208eda614b37228bb9355f8b08c0e15178
+  languageName: node
+  linkType: hard
+
+"@protobuf-ts/runtime-rpc@npm:^2.9.6":
+  version: 2.9.6
+  resolution: "@protobuf-ts/runtime-rpc@npm:2.9.6"
+  dependencies:
+    "@protobuf-ts/runtime": ^2.9.6
+  checksum: 72d77eb78e9e1e9506bf73bbec46d08c91e89784654cb1a04519e4d30dfd0111545013b40570bd1f5d13d40a3b9b7db89710409e36f0ccff43eb9e19cb5c43f7
+  languageName: node
+  linkType: hard
+
+"@protobuf-ts/runtime@npm:^2.9.6":
+  version: 2.9.6
+  resolution: "@protobuf-ts/runtime@npm:2.9.6"
+  checksum: 536c1ec575ca89d5316a7236ca763787d011dbaaf428e333887999b7ac3a4cf4eae96fe0327e25e0786cc9cd5e9e740f6b8fab36a9ee193cbfcfa4af660a5e29
   languageName: node
   linkType: hard
 
@@ -4424,7 +4475,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "mage-action@workspace:."
   dependencies:
-    "@actions/cache": ^3.2.4
+    "@actions/cache": ^4.0.3
     "@actions/core": ^1.11.1
     "@actions/exec": ^1.1.1
     "@actions/http-client": ^2.2.3
@@ -5757,6 +5808,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"typescript@npm:^3.9":
+  version: 3.9.10
+  resolution: "typescript@npm:3.9.10"
+  bin:
+    tsc: bin/tsc
+    tsserver: bin/tsserver
+  checksum: 46c842e2cd4797b88b66ef06c9c41dd21da48b95787072ccf39d5f2aa3124361bc4c966aa1c7f709fae0509614d76751455b5231b12dbb72eb97a31369e1ff92
+  languageName: node
+  linkType: hard
+
 "typescript@npm:^5.2.2":
   version: 5.2.2
   resolution: "typescript@npm:5.2.2"
@@ -5764,6 +5825,16 @@ __metadata:
     tsc: bin/tsc
     tsserver: bin/tsserver
   checksum: 7912821dac4d962d315c36800fe387cdc0a6298dba7ec171b350b4a6e988b51d7b8f051317786db1094bd7431d526b648aba7da8236607febb26cf5b871d2d3c
+  languageName: node
+  linkType: hard
+
+"typescript@patch:typescript@^3.9#~builtin<compat/typescript>":
+  version: 3.9.10
+  resolution: "typescript@patch:typescript@npm%3A3.9.10#~builtin<compat/typescript>::version=3.9.10&hash=3bd3d3"
+  bin:
+    tsc: bin/tsc
+    tsserver: bin/tsserver
+  checksum: dc7141ab555b23a8650a6787f98845fc11692063d02b75ff49433091b3af2fe3d773650dea18389d7c21f47d620fb3b110ea363dab4ab039417a6ccbbaf96fc2
   languageName: node
   linkType: hard
 
@@ -5841,7 +5912,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"uuid@npm:^3.3.2, uuid@npm:^3.3.3":
+"uuid@npm:^3.3.2":
   version: 3.4.0
   resolution: "uuid@npm:3.4.0"
   bin:
