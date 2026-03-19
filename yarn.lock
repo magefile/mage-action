@@ -60,7 +60,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@actions/exec@npm:^1.0.0, @actions/exec@npm:^1.0.1, @actions/exec@npm:^1.1.1":
+"@actions/exec@npm:^1.0.1, @actions/exec@npm:^1.1.1":
   version: 1.1.1
   resolution: "@actions/exec@npm:1.1.1"
   dependencies:
@@ -116,30 +116,30 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@actions/io@npm:^1.0.1, @actions/io@npm:^1.1.1":
+"@actions/io@npm:^1.0.1":
   version: 1.1.2
   resolution: "@actions/io@npm:1.1.2"
   checksum: 10/412eb24929a0d73bb168b4ca9929c1e2ee1e4af6e40593e4b75a4aa768ad52b439fb9d570ee614fe22fe4744133836e7d1e0c5c16d73d250592e30166aa505ca
   languageName: node
   linkType: hard
 
-"@actions/io@npm:^3.0.2":
+"@actions/io@npm:^3.0.0, @actions/io@npm:^3.0.2":
   version: 3.0.2
   resolution: "@actions/io@npm:3.0.2"
   checksum: 10/ef17cb4ec0a2b640d5f4851446ad1c12bf4b2b1cf83741c5eecee4e8f50b3ca3ac9ae4084027dcaa1bf0c016d653dbc0e5fe20daedd39ee5fb6edb671f6e45b5
   languageName: node
   linkType: hard
 
-"@actions/tool-cache@npm:^2.0.2":
-  version: 2.0.2
-  resolution: "@actions/tool-cache@npm:2.0.2"
+"@actions/tool-cache@npm:^4.0.0":
+  version: 4.0.0
+  resolution: "@actions/tool-cache@npm:4.0.0"
   dependencies:
-    "@actions/core": "npm:^1.11.1"
-    "@actions/exec": "npm:^1.0.0"
-    "@actions/http-client": "npm:^2.0.1"
-    "@actions/io": "npm:^1.1.1"
-    semver: "npm:^6.1.0"
-  checksum: 10/87ec7fef40a2ad606c4a8b47833c1818ddb42e009bd0434b49dfc8c8bd4de6b67b4edafae599e76869d923a2f940f223866012b0179dcbb172c784d90da3c3a9
+    "@actions/core": "npm:^3.0.0"
+    "@actions/exec": "npm:^3.0.0"
+    "@actions/http-client": "npm:^4.0.0"
+    "@actions/io": "npm:^3.0.0"
+    semver: "npm:^7.7.3"
+  checksum: 10/a01b2739843096a894d51c3f77c69a93d88597a0d3cf001f3dac2178087e590bdb1052261b43c36cbc45b0fdeeb060a44bbb8408739697a3ae98efdc4acb302b
   languageName: node
   linkType: hard
 
@@ -2490,7 +2490,7 @@ __metadata:
     "@actions/core": "npm:^3.0.0"
     "@actions/exec": "npm:^3.0.0"
     "@actions/http-client": "npm:^4.0.0"
-    "@actions/tool-cache": "npm:^2.0.2"
+    "@actions/tool-cache": "npm:^4.0.0"
     "@eslint/js": "npm:^9.39.3"
     "@types/node": "npm:^24.0.15"
     "@typescript-eslint/eslint-plugin": "npm:^8.56.1"
@@ -3104,7 +3104,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"semver@npm:^6.0.0, semver@npm:^6.1.0, semver@npm:^6.3.1":
+"semver@npm:^6.0.0, semver@npm:^6.3.1":
   version: 6.3.1
   resolution: "semver@npm:6.3.1"
   bin:
