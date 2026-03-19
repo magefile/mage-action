@@ -52,7 +52,7 @@ jobs:
         with:
           version: ${{ matrix.version }}
           args: build
-          workdir: test
+          workdir: tests/fixtures/app
           cache-binary: false
 
   install-only:
