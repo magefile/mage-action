@@ -29,7 +29,7 @@ jobs:
     secrets: inherit
 
   open-pr:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
     if: github.event_name != 'pull_request'
     permissions:
       # required to create PR

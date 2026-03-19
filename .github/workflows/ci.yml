@@ -30,9 +30,8 @@ jobs:
         os:
           - ubuntu-latest
           # TODO: uncomment when arm64 binaries are available: https://github.com/magefile/mage/issues/481
-          # - macos-15
-          # - macos-14
-          - macos-13
+          # - macos-26
+          - macos-26-intel
           - windows-latest
         version:
           - latest
@@ -64,9 +63,8 @@ jobs:
         os:
           - ubuntu-latest
           # TODO: uncomment when arm64 binaries are available: https://github.com/magefile/mage/issues/481
-          # - macos-15
-          # - macos-14
-          - macos-13
+          # - macos-26
+          - macos-26-intel
           - windows-latest
         version:
           - latest
