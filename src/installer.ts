@@ -1,3 +1,4 @@
+import * as fs from 'fs';
 import * as os from 'os';
 import * as path from 'path';
 import * as util from 'util';
@@ -5,7 +6,6 @@ import * as core from '@actions/core';
 import * as httpm from '@actions/http-client';
 import * as tc from '@actions/tool-cache';
 import * as cache from '@actions/cache';
-import fs from 'fs';
 
 const osPlat: string = os.platform();
 const osArch: string = os.arch();
