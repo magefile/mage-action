@@ -28,8 +28,8 @@ ___
 name: mage
 
 on:
-  pull_request:
   push:
+  pull_request:
 
 jobs:
   mage:
@@ -37,13 +37,13 @@ jobs:
     steps:
       -
         name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
       -
         name: Set up Go
-        uses: actions/setup-go@v5
+        uses: actions/setup-go@v6
       -
         name: Run Mage
-        uses: magefile/mage-action@v3
+        uses: magefile/mage-action@v4
         with:
           version: latest
           args: build
@@ -64,13 +64,13 @@ jobs:
     steps:
       -
         name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
       -
         name: Set up Go
-        uses: actions/setup-go@v5
+        uses: actions/setup-go@v6
       -
         name: Run Mage
-        uses: magefile/mage-action@v3
+        uses: magefile/mage-action@v4
         with:
           install-only: true
       -
