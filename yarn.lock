@@ -375,7 +375,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@eslint/js@npm:9.39.4, @eslint/js@npm:^9.39.2":
+"@eslint/js@npm:9.39.4, @eslint/js@npm:^9.39.3":
   version: 9.39.4
   resolution: "@eslint/js@npm:9.39.4"
   checksum: 5b1cd1e6c13bc119c92911e6cef7cf886d942c9e047db0c923bbdd539ed6b9820d986b4559be1f2e24836de7fbad95bbfe268b2bf3d1fef76de37bdc8fae19d8
@@ -770,12 +770,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^20.19.27":
-  version: 20.19.37
-  resolution: "@types/node@npm:20.19.37"
+"@types/node@npm:^24.0.15":
+  version: 24.12.0
+  resolution: "@types/node@npm:24.12.0"
   dependencies:
-    undici-types: ~6.21.0
-  checksum: b20eed0820bfcd7a3140aa833a4306dc29307cbd3606d3487a168822c17725adbc21ce45bb26e52371a8f7c2a4a3734c6e10086b0e3fccc595a4585572a40c62
+    undici-types: ~7.16.0
+  checksum: 1bad1c399515b316362b97c3a17845d960e4f6faba880d3268968bfee269669869a8939a999837e9d7c205aebc3788231f3c805293ce173da50e825922c27e7e
   languageName: node
   linkType: hard
 
@@ -788,7 +788,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/eslint-plugin@npm:^8.50.0":
+"@typescript-eslint/eslint-plugin@npm:^8.56.1":
   version: 8.57.1
   resolution: "@typescript-eslint/eslint-plugin@npm:8.57.1"
   dependencies:
@@ -808,7 +808,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/parser@npm:^8.50.0":
+"@typescript-eslint/parser@npm:^8.56.1":
   version: 8.57.1
   resolution: "@typescript-eslint/parser@npm:8.57.1"
   dependencies:
@@ -923,14 +923,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vercel/ncc@npm:^0.38.0":
-  version: 0.38.0
-  resolution: "@vercel/ncc@npm:0.38.0"
+"@vercel/ncc@npm:^0.38.4":
+  version: 0.38.4
+  resolution: "@vercel/ncc@npm:0.38.4"
   dependencies:
     node-gyp: latest
   bin:
     ncc: dist/ncc/cli.js
-  checksum: 859af1b1dcca540ccf564f422a906c40ce5e97762e6cad11aabe319ae212bd7bce2d2c7f2caffcf3aee0aa5d4bf16b6e7a53a4577dd6fd4bc24962c2246fe110
+  checksum: 3d6b9997ad3fbcbb8f7548d640e724ea74db15b8dafec6a41e839b5c31b7f26e6977a8ca0e1510f6670d2a51a5f875b59b22fae4deca5ae40b6ce7a97129c3af
   languageName: node
   linkType: hard
 
@@ -1487,7 +1487,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-prettier@npm:^5.5.4":
+"eslint-plugin-prettier@npm:^5.5.5":
   version: 5.5.5
   resolution: "eslint-plugin-prettier@npm:5.5.5"
   dependencies:
@@ -1538,7 +1538,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:^9.39.2":
+"eslint@npm:^9.39.3":
   version: 9.39.4
   resolution: "eslint@npm:9.39.4"
   dependencies:
@@ -2322,18 +2322,18 @@ __metadata:
     "@actions/exec": ^1.1.1
     "@actions/http-client": ^2.2.3
     "@actions/tool-cache": ^2.0.2
-    "@eslint/js": ^9.39.2
-    "@types/node": ^20.19.27
-    "@typescript-eslint/eslint-plugin": ^8.50.0
-    "@typescript-eslint/parser": ^8.50.0
-    "@vercel/ncc": ^0.38.0
+    "@eslint/js": ^9.39.3
+    "@types/node": ^24.0.15
+    "@typescript-eslint/eslint-plugin": ^8.56.1
+    "@typescript-eslint/parser": ^8.56.1
+    "@vercel/ncc": ^0.38.4
     "@vitest/coverage-v8": ^4.0.18
     "@vitest/eslint-plugin": ^1.6.9
-    eslint: ^9.39.2
+    eslint: ^9.39.3
     eslint-config-prettier: ^10.1.8
-    eslint-plugin-prettier: ^5.5.4
+    eslint-plugin-prettier: ^5.5.5
     globals: ^17.3.0
-    prettier: ^3.7.4
+    prettier: ^3.8.1
     typescript: ^5.9.3
     vitest: ^4.0.18
   languageName: unknown
@@ -2768,7 +2768,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier@npm:^3.7.4":
+"prettier@npm:^3.8.1":
   version: 3.8.1
   resolution: "prettier@npm:3.8.1"
   bin:
@@ -3264,10 +3264,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"undici-types@npm:~6.21.0":
-  version: 6.21.0
-  resolution: "undici-types@npm:6.21.0"
-  checksum: 46331c7d6016bf85b3e8f20c159d62f5ae471aba1eb3dc52fff35a0259d58dcc7d592d4cc4f00c5f9243fa738a11cfa48bd20203040d4a9e6bc25e807fab7ab3
+"undici-types@npm:~7.16.0":
+  version: 7.16.0
+  resolution: "undici-types@npm:7.16.0"
+  checksum: 1ef68fc6c5bad200c8b6f17de8e5bc5cfdcadc164ba8d7208cd087cfa8583d922d8316a7fd76c9a658c22b4123d3ff847429185094484fbc65377d695c905857
   languageName: node
   linkType: hard
 
