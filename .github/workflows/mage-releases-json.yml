@@ -21,7 +21,7 @@ on:
 
 jobs:
   generate:
-    uses: crazy-max/.github/.github/workflows/releases-json.yml@fa6141aedf23596fb8bdcceab9cce8dadaa31bd9
+    uses: crazy-max/.github/.github/workflows/releases-json.yml@8df2a341be4d0540858ba7abbdffb5edafb2a1a7
     with:
       repository: magefile/mage
       artifact_name: mage-releases-json
